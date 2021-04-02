@@ -1,0 +1,36 @@
+.nav
+{
+	background: #1523;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	padding: 20px;
+	transition: 350ms;
+}
+.nav-cross
+{
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	padding: 20px;
+	transition: 350ms;
+}
+.sidebar-nav
+{
+	background: #1523;
+	width: 250px;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	position: fixed;
+	top: 0;
+	transition: 350ms;
+	z-index: 10;
+	overflow-y: scroll;
+	overflow-x: hidden;
+
+	.sidebar-wrap
+	{
+		width: 100%;
+	}
+}
