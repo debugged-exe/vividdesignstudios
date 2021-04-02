@@ -4,6 +4,7 @@ import * as AiIcons from 'react-icons/ai';
 import './Sidebar.scss';
 import {SidebarData} from './SidebarData.js';
 import SubMenu from './SubMenu.js';
+import ReactLogo from '../../logo.svg';
 
 const Sidebar = () => {
 
@@ -23,6 +24,7 @@ const Sidebar = () => {
 					<div className="nav-cross">
 						<AiIcons.AiOutlineClose size={25} onClick={showSidebar} />
 					</div>
+					<img src={ReactLogo} alt="React Logo" style={{background: 'gray', width: '65%', height: '160px', borderRadius: '100px', margin:'10px'}}/>
 					{
 						SidebarData.map((item,index) => {
 							return(
