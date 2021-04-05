@@ -1,4 +1,5 @@
 import Sidebar from './Components/Sidebar/Sidebar.js';
+import HomePage from './Pages/HomePage/HomePage.js';
 import './App.css';
 import {
     BrowserRouter as Router,
@@ -12,6 +13,11 @@ function App() {
     <div className="App">
       <HashRouter>
       	<Sidebar />
+          <Switch>
+            <Route exact path = '/'>
+              <HomePage />
+            </Route>
+          </Switch>
       </HashRouter>
     </div>
   );

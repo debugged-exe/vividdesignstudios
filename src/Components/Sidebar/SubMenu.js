@@ -29,7 +29,7 @@ const SubMenu = ({item}) => {
 			</Link>
 			{subnav && item.subNav.map((item,index) => {
 				return(
-					<Link className="dropDown-link" to={item.path} >
+					<Link className="dropDown-link" key={index} to={item.path} >
 						<span className="dropdown-icon">
 							{item.icon}
 						</span>

@@ -15,7 +15,7 @@ const Sidebar = () => {
 	}
 
 	return (
-		<div>
+		<div className="sidebar-container">
 			<div className="nav" style={{display: `${sidebar?'none':'flex'}`}}>
 				<FaIcons.FaBars size={25} onClick={showSidebar} />
 			</div>
@@ -24,7 +24,7 @@ const Sidebar = () => {
 					<div className="nav-cross">
 						<AiIcons.AiOutlineClose size={25} onClick={showSidebar} />
 					</div>
-					<img src={ReactLogo} alt="React Logo" style={{background: 'gray', width: '65%', height: '160px', borderRadius: '100px', margin:'10px'}}/>
+					<img src={ReactLogo} alt="React Logo" style={{width: '65%', margin:'10px'}}/>
 					{
 						SidebarData.map((item,index) => {
 							return(
