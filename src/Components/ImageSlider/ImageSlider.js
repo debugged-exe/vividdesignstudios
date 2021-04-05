@@ -13,9 +13,9 @@ const ImageSlider = () => {
       fade: true,
       lazyload: true,
       autoplay: true,
-      autoplaySpeed: 2000,
+      autoplaySpeed: 3000,
       infinite: true,
-      speed: 2000,
+      speed: 3000,
       slidesToShow: 1,
       slidesToScroll: 1
     };
@@ -27,22 +27,33 @@ const ImageSlider = () => {
 					<img src={img1} alt="Image"/>
 					<div className="label">
 						<p className="title">Vivid Design Studios</p>
-						<p className="subtitle">Interior Designer | Architect | Civil Engineer</p>
+						<p className="subtitle">
+							<p className="prof">Interior Designer |&nbsp;</p>
+							<p className="prof">Architect |&nbsp;</p> 
+							<p className="prof">Civil Engineer</p>
+						</p>
 					</div>
 				</div>
 				<div className="item-container">
 					<img src={img2} alt="Image"/>
 					<div className="label">
 						<p className="title">Vivid Design Studios</p>
-						<p className="subtitle">Interior Designer | Architect | Civil Engineer</p>
+						<p className="subtitle">
+							<p className="prof">Interior Designer |&nbsp;</p>
+							<p className="prof">Architect |&nbsp;</p> 
+							<p className="prof">Civil Engineer</p>
+						</p>
 					</div>
 				</div>
 				<div className="item-container">
 					<img src={img3} alt="Image"/>
 					<div className="label">
 						<p className="title">Vivid Design Studios</p>
-						<p className="subtitle">Interior Designer | Architect | Civil Engineer</p>
-						<h4></h4>
+						<p className="subtitle">
+							<p className="prof">Interior Designer |&nbsp;</p>
+							<p className="prof">Architect |&nbsp;</p> 
+							<p className="prof">Civil Engineer</p>
+						</p>
 					</div>
 				</div>
 			</Slider>
@@ -51,7 +62,3 @@ const ImageSlider = () => {
 }
 
 export default ImageSlider;
-
-// style={{backgroundImage: `url(${img1})`}}
-// style={{backgroundImage: `url(${img2})`}}
-// style={{backgroundImage: `url(${img3})`}}

@@ -5,8 +5,22 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding: 20px;
+	padding: 10px;
 	transition: 350ms;
+
+	.logo-container
+	{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		.logo-title
+		{
+			font-family: 'Montserrat', sans-serif;
+			font-weight: bold;
+			font-size: 17px;
+		}
+	}
 }
 .nav-cross
 {
