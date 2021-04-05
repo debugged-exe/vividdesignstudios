@@ -25,15 +25,25 @@ const ImageSlider = () => {
 			<Slider {...settings} style={{width: '99.56vw', height: '100vh', overflow: 'hidden'}}>
 				<div className="item-container">
 					<img src={img1} alt="Image"/>
-					<h3 className="label">1</h3>
+					<div className="label">
+						<p className="title">Vivid Design Studios</p>
+						<p className="subtitle">Interior Designer | Architect | Civil Engineer</p>
+					</div>
 				</div>
 				<div className="item-container">
 					<img src={img2} alt="Image"/>
-					<h3 className="label">2</h3>
+					<div className="label">
+						<p className="title">Vivid Design Studios</p>
+						<p className="subtitle">Interior Designer | Architect | Civil Engineer</p>
+					</div>
 				</div>
 				<div className="item-container">
 					<img src={img3} alt="Image"/>
-					<h3 className="label">3</h3>
+					<div className="label">
+						<p className="title">Vivid Design Studios</p>
+						<p className="subtitle">Interior Designer | Architect | Civil Engineer</p>
+						<h4></h4>
+					</div>
 				</div>
 			</Slider>
 		</div>

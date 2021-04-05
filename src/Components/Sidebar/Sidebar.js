@@ -4,7 +4,8 @@ import * as AiIcons from 'react-icons/ai';
 import './Sidebar.scss';
 import {SidebarData} from './SidebarData.js';
 import SubMenu from './SubMenu.js';
-import ReactLogo from '../../logo.svg';
+import {ReactComponent as ReactLogo} from '../../logo.svg';
+import Logo from '../../logo.svg';
 
 const Sidebar = () => {
 
@@ -17,6 +18,7 @@ const Sidebar = () => {
 	return (
 		<div className="sidebar-container">
 			<div className="nav" style={{display: `${sidebar?'none':'flex'}`}}>
+				<ReactLogo style={{width: '50px', height: '35px'}}/>
 				<FaIcons.FaBars size={25} onClick={showSidebar} />
 			</div>
 			<div className="sidebar-nav" style={{left: `${sidebar?'0':'-100%'}`}}>
@@ -24,7 +26,7 @@ const Sidebar = () => {
 					<div className="nav-cross">
 						<AiIcons.AiOutlineClose size={25} onClick={showSidebar} />
 					</div>
-					<img src={ReactLogo} alt="React Logo" style={{width: '65%', margin:'10px'}}/>
+					<img src={Logo} alt="React Logo" style={{width: '65%', margin:'10px'}}/>
 					{
 						SidebarData.map((item,index) => {
 							return(
