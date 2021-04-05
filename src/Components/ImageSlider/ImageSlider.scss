@@ -1,12 +1,22 @@
-.slide-container
+.slider-container
 {
-
-	.image-container
+	.item-container
 	{
-		height: 100vh;
+		position: relative;
+
+		.label
+		{
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			color: white;
+		}
+
+		img
+		{
+			width: 100vw;
+			height: 100vh;
+			object-fit: cover;
+		}
 	}
 }
-img
-{
-	object-fit: cover;
-} 

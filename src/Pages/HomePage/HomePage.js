@@ -1,6 +1,6 @@
 import React from 'react';
-import './HomePage.scss';
 import ImageSlider from '../../Components/ImageSlider/ImageSlider.js';
+import './HomePage.scss';
 
 const HomePage = () => {
 	return (

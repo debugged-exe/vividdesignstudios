@@ -1,34 +1,47 @@
-import React from 'react'
-import Slider from 'react-slick';
-import { Fade } from 'react-slideshow-image';
-import img1 from './Images/img1.jpg';
-import img2 from './Images/img2.jpg';
-import img3 from './Images/img3.jpg';
-import 'react-slideshow-image/dist/styles.css';
+import React from 'react';
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.scss";
+import "slick-carousel/slick/slick-theme.scss";
+import img1 from './Image/img1.jpg';
+import img2 from './Image/img2.jpg';
+import img3 from './Image/img3.jpg';
 import './ImageSlider.scss';
 
 const ImageSlider = () => {
-	return (
-		<div className="slide-container">
-			<Fade arrows={false} duration={500}>
-				<div className="each-fade">
-					<div className="image-container">
-						<img src={img1} alt="Image" width="100%" height="100%" />
-					</div>
+	const settings = {
+      dots: false,
+      fade: true,
+      lazyload: true,
+      autoplay: true,
+      autoplaySpeed: 2000,
+      infinite: true,
+      speed: 2000,
+      slidesToShow: 1,
+      slidesToScroll: 1
+    };
+
+	return(
+		<div className="slider-container" >
+			<Slider {...settings} style={{width: '99.56vw', height: '100vh', overflow: 'hidden'}}>
+				<div className="item-container">
+					<img src={img1} alt="Image"/>
+					<h3 className="label">1</h3>
 				</div>
-				<div className="each-fade">
-					<div className="image-container">
-						<img src={img2} alt="Image" width="100%" height="100%" />
-					</div>
+				<div className="item-container">
+					<img src={img2} alt="Image"/>
+					<h3 className="label">2</h3>
 				</div>
-				<div className="each-fade">
-					<div className="image-container">
-						<img src={img3} alt="Image" width="100%" height="100%" />
-					</div>
+				<div className="item-container">
+					<img src={img3} alt="Image"/>
+					<h3 className="label">3</h3>
 				</div>
-			</Fade>
+			</Slider>
 		</div>
-	)
+	);
 }
 
-export default ImageSlider
+export default ImageSlider;
+
+// style={{backgroundImage: `url(${img1})`}}
+// style={{backgroundImage: `url(${img2})`}}
+// style={{backgroundImage: `url(${img3})`}}
