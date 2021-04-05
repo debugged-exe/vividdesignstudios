@@ -4,17 +4,22 @@
 	justify-content: space-between;
 	padding: 15px;
 	font-size: 18px;
-	background: #1523;
+	// light
+	background: #F9F1F0;
 	text-decoration: none;
 	color: black;
 	width: 100%;
+	font-weight: 600;
 	transition: all 0.3s ease-out;
 
 	&:hover
 	{
-		background: white;
+		// dark
+		background: #FADCD9;
 		border-left: 4px solid black;
 		cursor: pointer;
+		color: black;
+		font-weight: bold;
 	}
 
 	.sidebar-label
@@ -38,7 +43,7 @@
 		}
 		.drop-icon
 		{
-			padding-left: 65px;
+			padding-left: 165px;
 		}
 	}
 }
@@ -48,14 +53,16 @@
 	justify-content: flex-start;
 	padding: 15px;
 	font-size: 18px;
-	background: #1523;
+	// light
+	background: #F9F1F0;
 	text-decoration: none;
 	color: black;
+	font-weight: 600;
 	transition: all 0.3s ease-out;
 
 	&:hover
 	{
-		background: black;
+		background: #B99095;
 		color: white;
 		cursor: pointer;
 	}
@@ -74,4 +81,17 @@
 		padding-top: 5px;
 		margin-left: 5px;
 	}
+}
+@media only screen 
+   and (max-width : 320px) {
+   .sidebar-link
+   {
+	   	.sidebar-label
+	   {
+	   		.drop-icon
+	   		{
+	   			padding-left: 65px;
+	   		}
+	   }
+   }
 }

@@ -7,6 +7,11 @@ import * as GrIcons from 'react-icons/gr';
 
 export const SidebarData = [
 {
+	title: 'Home',
+	path: '/',
+	icon: <AiIcons.AiFillHome />
+},
+{
 	title: 'Categories',
 	path: '/categories',
 	icon: <FaIcons.FaListUl />,
