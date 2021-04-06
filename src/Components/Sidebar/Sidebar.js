@@ -18,7 +18,10 @@ const Sidebar = () => {
 	return (
 		<div className="sidebar-container">
 			<div className="nav" style={{display: `${sidebar?'none':'flex'}`}}>
-				<ReactLogo style={{width: '50px', height: '35px'}}/>
+				<div className="logo-container">
+					<ReactLogo style={{width: '50px', height: '50px'}}/>
+					<p className="logo-title">Vivid Design Studios</p>
+				</div>
 				<FaIcons.FaBars size={25} onClick={showSidebar} />
 			</div>
 			<div className="sidebar-nav" style={{left: `${sidebar?'0':'-100%'}`}}>
