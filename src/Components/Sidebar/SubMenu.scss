@@ -5,7 +5,8 @@
 	padding: 15px;
 	font-size: 18px;
 	// light
-	background: #F9F1F0;
+	// background: #F9F1F0;
+	background: #EAE7E5;
 	text-decoration: none;
 	color: black;
 	width: 100%;
@@ -15,7 +16,8 @@
 	&:hover
 	{
 		// dark
-		background: #FADCD9;
+		// background: #FADCD9;
+		background: #BFB8B4;
 		border-left: 4px solid black;
 		cursor: pointer;
 		color: black;
@@ -54,7 +56,8 @@
 	padding: 15px;
 	font-size: 18px;
 	// light
-	background: #F9F1F0;
+	// background: #F9F1F0;
+	background: #EAE7E5;
 	text-decoration: none;
 	color: black;
 	font-weight: 600;
@@ -62,7 +65,8 @@
 
 	&:hover
 	{
-		background: #B99095;
+		// background: #B99095;
+		background: black;
 		color: white;
 		cursor: pointer;
 	}

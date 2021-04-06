@@ -1,0 +1,39 @@
+a
+{
+	text-decoration: none;
+	color: black;
+}
+.connect-container
+{
+	font-family: 'Open Sans Condensed', sans-serif;
+
+	.social-links
+	{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+
+		.social-label
+		{
+			font-size: 25px;
+			font-weight: bold;
+		}
+	}
+
+	.social-logos
+	{
+		display: flex;
+		flex-wrap: wrap;
+
+		.logos
+		{
+			margin: 15px;
+		}
+	}
+
+	.address
+	{
+		letter-spacing: 1px;
+	}
+}
