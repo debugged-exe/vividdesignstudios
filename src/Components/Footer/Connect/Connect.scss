@@ -6,6 +6,8 @@ a
 .connect-container
 {
 	font-family: 'Open Sans Condensed', sans-serif;
+	width: 70vw;
+	margin: 20px;
 
 	.social-links
 	{
@@ -24,7 +26,6 @@ a
 	.social-logos
 	{
 		display: flex;
-		flex-wrap: wrap;
 
 		.logos
 		{
@@ -35,5 +36,12 @@ a
 	.address
 	{
 		letter-spacing: 1px;
+	}
+}
+@media only screen 
+   and (max-width : 768px)
+{
+	.logos{
+
 	}
 }

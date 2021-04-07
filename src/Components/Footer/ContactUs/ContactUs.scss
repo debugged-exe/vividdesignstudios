@@ -1,0 +1,33 @@
+.contact-container
+{
+	width: 30vw;
+	margin: 20px;
+	padding: 20px;
+	font-family: 'Open Sans Condensed', sans-serif;
+
+	.title
+	{
+		font-size: 25px;
+		font-weight: bold;
+	}
+}
+@media only screen 
+   and (max-width : 768px)
+{
+	.contact-container
+	{
+		width: 70vw;
+		padding: none;
+		margin: none;
+	}
+}
+@media only screen 
+   and (max-width : 320px)
+{
+	.contact-container
+	{
+		width: 100vw;
+		padding: none;
+		margin: none;
+	}
+}
