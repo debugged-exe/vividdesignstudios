@@ -1,8 +1,11 @@
+$base-color:#EAE7E5 ;
+
+
 .nav
 {
 	// light
 	// background: #F9F1F0;
-	background: #EAE7E5;
+	background: $base-color;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -46,7 +49,7 @@
 	{
 		// light
 		// background: #F9F1F0;
-		background: #EAE7E5;
+		background:$base-color;
 		width: 100%;
 		overflow-y: scroll;
 		overflow-x: hidden;

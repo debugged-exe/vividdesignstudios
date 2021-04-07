@@ -14,15 +14,15 @@ class CategoriesSlideshowdesktop extends React.Component {
   render() {
     return(
       <div>
-      <h1 className="heading mt5 ml4">CATEGORIES</h1>
+      <h1 className="heading mt5 ml5">CATEGORIES</h1>
       <div>
          {
            items.map((item)=>(
-              <div  className="flex justify-center ma5 container">
+              <div  className="flex justify-center ma5 container shadow-2">
                 <div className="image-container">
                   <a href={item.link}>
                     <img src={item.original} className="grow"/>
-                  </a>  
+                  </a>
                 </div>
                 <div className="description">
                   <h1>{item.des}</h1>
