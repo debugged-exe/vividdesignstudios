@@ -12,16 +12,17 @@
   font-family: 'Open Sans Condensed';
   border: none;
   cursor: pointer;
-  transition: all 0.4s linear;
+  transition: all 0.3s linear;
   margin: 2px;
   display: flex;
   justify-content: center;
+  margin-left:30%;
 
   &:hover
   {
     background-color: white;
     color: black;
-    border: solid 1px black;
+    border: solid 1.5px black;
   }
 
   &.google-sign-in {
@@ -40,7 +41,7 @@
   {
     background-color: white;
     border: solid 1px black;
-    color: black; 
+    color: black;
 
     &:hover
     {
@@ -48,5 +49,13 @@
       color: white;
       border: none;
     }
+  }
+}
+
+@media only screen
+   and (max-width : 490px)
+{
+	.custom-button{
+      margin-left:20%;
   }
 }

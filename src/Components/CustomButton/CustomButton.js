@@ -1,13 +1,14 @@
 import React from 'react';
 import './CustomButton.scss';
+import 'tachyons';
 
 const CustomButton = ({children, isGoogleSignIn, inverted, ...otherProps}) => {
 	return(
-		<button 
+		<button
 		className={
-			`${inverted?'inverted':''} 
-			${isGoogleSignIn?'google-sign-in':''} 
-			custom-button`}  
+			`${inverted?'inverted':''}
+			${isGoogleSignIn?'google-sign-in':''}
+			custom-button`}
 			{...otherProps}
 			>
 			{

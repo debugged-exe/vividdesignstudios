@@ -1,6 +1,7 @@
 import React from 'react';
 import FormInput from '../../FormInput/FormInput.js';
 import './ContactUs.scss';
+import CustomButton from '../../CustomButton/CustomButton.js';
 
 
 const initialState = {
@@ -32,31 +33,32 @@ class ContactUs extends React.PureComponent {
 		return (
 			<div className="contact-container">
 				<p className="title">Contact Us</p>
-				<form onSubmit={this.handleSubmit}>
-					<FormInput 
+				<form onSubmit={this.handleSubmit} className="form-container center ">
+					<FormInput
 					label="Name"
-					name="name" 
-					type="text" 
-					value={this.state.name} 
+					name="name"
+					type="text"
+					value={this.state.name}
 					handleChange={this.handleChange}
 					required
 					/>
-					<FormInput 
+					<FormInput
 					label="Email"
-					name="email" 
-					type="email" 
-					value={this.state.email} 
+					name="email"
+					type="email"
+					value={this.state.email}
 					handleChange={this.handleChange}
 					required
 					/>
-					<FormInput 
+					<FormInput
 					label="Message"
-					name="message" 
-					type="text" 
-					value={this.state.message} 
+					name="message"
+					type="text"
+					value={this.state.message}
 					handleChange={this.handleChange}
 					required
 					/>
+					<CustomButton type="submit">Contact Us</CustomButton>
 				</form>
 			</div>
 		)
