@@ -13,7 +13,7 @@ class CategoriesSlideshowmobile extends React.Component {
   render() {
     return(
       <div className="mobile-head">
-      <h1 className="heading mt5">CATEGORIES</h1>
+      <h1 className="heading mt5 ml3">CATEGORIES</h1>
       <div  className="menu-items flex flex-wrap">
       {
         items.map((item)=>(

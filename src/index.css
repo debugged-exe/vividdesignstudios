@@ -26,5 +26,30 @@ code {
     monospace;
 }
 
+.rec.rec-arrow:hover:enabled{
+  background-color:#EAE7E5;
+  color: black;
+}
+.rec.rec-arrow{
+  background-color:#EAE7E5;
+  color: black;
+}
+
+.rec.rec-dot_active{
+  background-color:#EAE7E5;
+  box-shadow: 0 0 1px 2px black;
+  color: black;
+}
+.rec.rec-dot_active:hover:enabled{
+  background-color:#EAE7E5;
+  box-shadow: 0 0 1px 2px black;
+  color: black;
+}
+.rec.rec-dot_active:hover:focus{
+  background-color: #EAE7E5;
+  box-shadow: 0 0 1px 2px black;
+  color: black;
+}
+
 /*#FADCD9 rose dew*/
 /*#B99095 dark dew*/
