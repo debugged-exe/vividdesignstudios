@@ -5,12 +5,12 @@ import Footer from '../../Components/Footer/Footer.js';
 import Latest from '../../Components/Latest/Latest.js';
 import './HomePage.scss';
 
-const HomePage = () => {
+const HomePage = ({showCategories}) => {
 	return (
 		<div className="home-container">
 			<ImageSlider />
 			<Latest/>
-			<CategoriesSlideshow />
+			<CategoriesSlideshow  showCategories={showCategories}/>
 			<Footer />
 		</div>
 	)

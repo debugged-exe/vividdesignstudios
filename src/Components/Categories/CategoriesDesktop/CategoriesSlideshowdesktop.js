@@ -2,16 +2,16 @@ import React, {useState} from 'react';
 import 'tachyons';
 import "react-image-gallery/styles/scss/image-gallery.scss";
 import "react-image-gallery/styles/css/image-gallery.css";
-import './CategoriesSlideshow.scss';
+import '.././CategoriesSlideshow.scss';
 import {HiOutlineArrowNarrowRight} from 'react-icons/hi';
 import './CategoriesSlideshowdesktop.scss';
-import {items} from './CategoryList.js';
+import {items} from '.././CategoryList.js';
+import { Link } from 'react-router-dom';
 
 
 
-class CategoriesSlideshowdesktop extends React.Component {
+const CategoriesSlideshowdesktop = ({showCategories})=> {
 
-  render() {
     return(
       <div>
       <h1 className="heading mt5 ml5">CATEGORIES</h1>
@@ -27,7 +27,9 @@ class CategoriesSlideshowdesktop extends React.Component {
                 <div className="description">
                   <h1>{item.des}</h1>
                   <p>{item.para}</p>
-                  <a href={item.link}><HiOutlineArrowNarrowRight className="mt5 arrow" size="5rem"/></a>
+                  <Link to='/Categoriesdecision' onClick={()=>showCategories(item.name)} >
+                  <HiOutlineArrowNarrowRight  className="mt5 arrow" size="5rem"/>
+                  </Link>
                 </div>
               </div>
            ))
@@ -35,7 +37,6 @@ class CategoriesSlideshowdesktop extends React.Component {
       </div>
     </div>
   );
-  }
 
 }
 export default CategoriesSlideshowdesktop;

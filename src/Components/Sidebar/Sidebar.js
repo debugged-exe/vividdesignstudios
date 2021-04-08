@@ -17,7 +17,7 @@ const Sidebar = () => {
 
 	return (
 		<div className="sidebar-container">
-			<div className="nav" style={{display: `${sidebar?'none':'flex'}`}}>
+			<div className="nav shadow-2" style={{display: `${sidebar?'none':'flex'}`}}>
 				<div className="logo-container">
 					<ReactLogo style={{width: '50px', height: '50px'}}/>
 					<p className="logo-title">Vivid Design Studios</p>

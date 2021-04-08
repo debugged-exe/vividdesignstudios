@@ -1,11 +1,11 @@
 import React, {useState} from 'react';
 import 'tachyons';
-import CategoriesSlideshowmobile from './CategoriesSlideshowmobile.js';
-import CategoriesSlideshowdesktop from './CategoriesSlideshowdesktop.js';
+import CategoriesSlideshowmobile from './CategoriesMobile/CategoriesSlideshowmobile.js';
+import CategoriesSlideshowdesktop from './CategoriesDesktop/CategoriesSlideshowdesktop.js';
 
 class CategoriesSlideshow extends React.Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     this.state = {
       width: window.innerWidth,
     };
@@ -28,11 +28,11 @@ class CategoriesSlideshow extends React.Component {
 
   if (isMobile) {
     return (
-    <CategoriesSlideshowmobile/>
+      <CategoriesSlideshowmobile showCategories={this.props.showCategories}/>
     );
   } else {
     return (
-<CategoriesSlideshowdesktop/>
+      <CategoriesSlideshowdesktop  showCategories={this.props.showCategories}/>
     );
   }
 }
