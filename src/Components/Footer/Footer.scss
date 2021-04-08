@@ -1,0 +1,19 @@
+.footer-container
+{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #bbbbbb;
+}
+
+@media only screen
+   and (max-width : 768px)
+{
+	.footer-container
+	{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+}
