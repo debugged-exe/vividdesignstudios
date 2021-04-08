@@ -36,9 +36,9 @@ class App extends React.Component {
                 <Route exact path='/Categoriesdecision' component={()=><CategoryPage product={this.state.product} />} />
               </Switch>
             <footer className="pv3 ph3 ph5-m ph6-l white flex justify-center footer_class" style={{backgroundColor: "black"}}>
-            <small className="f6 db white" style={{textAlign: 'center'}}>© 2021
-            <b className="ttu"> Developed by Debugged.exe</b>. All Rights Reserved
-            </small>
+              <small className="f6 db white" style={{textAlign: 'center'}}>© 2021
+              <b className="ttu"> Developed by Debugged.exe</b>. All Rights Reserved
+              </small>
             </footer>
         </HashRouter>
       </div>
