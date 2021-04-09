@@ -2,6 +2,7 @@ import React from 'react';
 import Sidebar from './Components/Sidebar/Sidebar.js';
 import HomePage from './Pages/HomePage/HomePage.js';
 import CategoryPage from './Pages/CategoryPage/CategoryPage.js';
+import LatestPage from './Pages/LatestPage/LatestPage.js';
 import './App.scss';
 import {
     BrowserRouter as Router,
@@ -16,6 +17,7 @@ class App extends React.Component {
 			 super();
 			 this.state = {
 					 product:'',
+           project:{},
 			 }
 	 }
 
@@ -23,6 +25,9 @@ class App extends React.Component {
 			 this.setState({product:product});
 	 }
 
+   showTrending=(project)=>{
+			 this.setState({project:project});
+	 }
 
 	render() {
     return (
@@ -31,9 +36,10 @@ class App extends React.Component {
           <Sidebar />
             <Switch>
                 <Route exact path = '/'>
-                <HomePage showCategories={this.showCategories} />
+                <HomePage showCategories={this.showCategories} showTrending={this.showTrending} />
                 </Route>
                 <Route exact path='/Categoriesdecision' component={()=><CategoryPage product={this.state.product} />} />
+                <Route exact path='/Latest' component={()=><LatestPage project={this.state.project} />} />
               </Switch>
             <footer className="pv3 ph3 ph5-m ph6-l white flex justify-center footer_class" style={{backgroundColor: "black"}}>
               <small className="f6 db white" style={{textAlign: 'center'}}>© 2021
