@@ -6,6 +6,7 @@ const DisplayCategories=({products, name})=>  {
   return (
     <div className="display-container">
       <p className="category-header">{name}</p>
+      <p className="category-description">Ad dolore officia in cillum officia sunt enim reprehenderit laborum esse non ut nostrud nisi dolor dolor minim sunt ea magna qui aute deserunt incididunt deserunt dolore veniam exercitation amet irure labore ut quis laborum laborum elit consectetur voluptate voluptate dolor aute velit proident dolore est culpa dolor ut cillum cupidatat non labore ut nisi id commodo deserunt nostrud enim sint nisi cupidatat elit pariatur occaecat quis dolor irure commodo ex ex sed aliquip ex proident sed dolore duis nostrud aliqua enim eu esse ex sit eiusmod non ullamco cupidatat quis est excepteur cupidatat excepteur voluptate voluptate adipisicing aliqua in voluptate officia labore voluptate occaecat amet magna elit sint ex esse magna esse ex occaecat magna irure sint dolore sunt cupidatat in mollit veniam sit officia enim anim dolor in reprehenderit id mollit non dolor in aliqua et nostrud aliqua laboris tempor nulla reprehenderit reprehenderit consequat quis consequat exercitation labore reprehenderit voluptate aliquip consectetur aute in veniam cillum id do.</p>
       <div className='gallery'>
       {
         products.map((data)=>(
