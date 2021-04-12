@@ -1,7 +1,7 @@
 import React from 'react';
 import './Latest.scss';
 import Carousel from 'react-elastic-carousel';
-import {Link} from 'react-router-dom';
+import { HashLink as Link } from 'react-router-hash-link';
 
 const Latest = ({project,showTrending}) => {
         const breakPoints = [
@@ -15,7 +15,7 @@ const Latest = ({project,showTrending}) => {
 	return (
 		<div className=' mb5'>
         <p className="heading1">TRENDING</p>
-        <div >
+        <div>
           <Carousel breakPoints={breakPoints} >
             {
               project.filter((item)=>(
@@ -23,10 +23,10 @@ const Latest = ({project,showTrending}) => {
               )).map((item)=>(
                 <div style={{height:'450px',width:'330px',position:'relative'}}>
                   <div className="img-div shadow-2">
-                    <img src={item.image}  style={{width:'100%',height:'80%'}}/>
+                    <img  className="grow" src={item.image}  style={{width:'100%',height:'80%'}}/>
                     <p className="pl3 pr3 description"> {item.text}</p>
                   </div>
-                  <Link to='/latest' onClick={()=>showTrending(item)} ><button
+                  <Link to='/latest/#latest' onClick={()=>showTrending(item)} ><button
                   className="white center button-style" >
                   READ
                   </button></Link>
