@@ -14,19 +14,19 @@ const CategoriesSlideshowdesktop = ({showCategories})=> {
       <div>
       <h1 className="heading mt5 ml5">CATEGORIES</h1>
       <div className="category">
-        <div className="category-item">
+        <div className="category-item shadow-2 ma3 pa3 bg-white">
           <div className="category-image">
             <img src={items[0].original} alt="image1" />
             <hr className="bottom-border"></hr>
             <hr className="right-border"></hr>
-            <p className="number">01</p>
+            <div className="number">01</div>
             <div className="text">
-              <h1>Residential</h1>
+              <p>[Kitchen][Bedroom][Living room][Bathroom]</p>
             </div>
           </div>
           <div className="category-description">
             <p className="category-header">Residential</p>
-            <p className="category-para">Pariatur laboris mollit commodo ut amet mollit ut id cillum proident reprehenderit nulla sed proident aliqua sunt dolor cupidatat magna nisi mollit sed ea reprehenderit consectetur tempor.</p>
+            <p className="category-para pa3">Pariatur laboris mollit commodo ut amet mollit ut id cillum proident reprehenderit nulla sed proident aliqua sunt dolor cupidatat magna nisi mollit sed ea reprehenderit consectetur tempor.</p>
             <div className="category-button">
               <button className="butt">View</button>
               <hr className="btn-bottom"></hr>
@@ -34,6 +34,30 @@ const CategoriesSlideshowdesktop = ({showCategories})=> {
             </div>
           </div>
         </div>
+
+
+        <div className="category-item shadow-2 pa3 ma3 bg-white">
+
+          <div className="category-description">
+            <p className="category-header">Commercial</p>
+            <p className="category-para pa3">Pariatur laboris mollit commodo ut amet mollit ut id cillum proident reprehenderit nulla sed proident aliqua sunt dolor cupidatat magna nisi mollit sed ea reprehenderit consectetur tempor.</p>
+            <div className="category-button">
+              <button className="butt">View</button>
+              <hr className="btn-bottom"></hr>
+              <hr className="right"></hr>
+            </div>
+          </div>
+          <div className="category-image">
+            <img src={items[2].original} alt="image1" />
+            <hr className="bottom-border"></hr>
+            <hr className="right-border"></hr>
+            <div className="number">02</div>
+            <div className="text">
+              <p>[Office][Cafe][Restaurants and Bar]</p>
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
   );
