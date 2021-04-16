@@ -8,7 +8,8 @@ import {
     BrowserRouter as Router,
     Switch,
     Route,
-    HashRouter
+    HashRouter,
+    Redirect
   } from "react-router-dom";
 
 
@@ -39,7 +40,12 @@ class App extends React.Component {
                 <HomePage showCategories={this.showCategories} showTrending={this.showTrending} />
                 </Route>
                 <Route exact path='/Categoriesdecision' component={()=><CategoryPage product={this.state.product} />} />
-                <Route exact path='/Latest' component={()=><LatestPage project={this.state.project} />} />
+                <Route 
+                exact path='/Latest' 
+                render = {
+                  () => this.state.project.Client?(<LatestPage project={this.state.project} />):(<Redirect to="/" />)
+                }
+                />
               </Switch>
             <footer className="pv3 ph3 ph5-m ph6-l white flex justify-center footer_class" style={{backgroundColor: "black"}}>
               <small className="f6 db white" style={{textAlign: 'center'}}>© 2021

@@ -1,86 +1,73 @@
+import ajinkyaHeader from '../Images/Ajinkya/6.jpg';
+import ajinkya1 from '../Images/Ajinkya/1.jpg';
+import ajinkya2 from '../Images/Ajinkya/10.jpg';
+import ajinkya3 from '../Images/Ajinkya/15.jpg';
+import ajinkya4 from '../Images/Ajinkya/16.jpg';
+import ajinkya5 from '../Images/Ajinkya/17.jpg';
+
+import cafeHeader from '../Images/CafeUnderground/11.jpg';
+import cafe1 from '../Images/CafeUnderground/1.jpg';
+import cafe2 from '../Images/CafeUnderground/4.jpg';
+import cafe3 from '../Images/CafeUnderground/6.jpg';
+import cafe4 from '../Images/CafeUnderground/7.jpg';
+import cafe5 from '../Images/CafeUnderground/12.jpg';
+import cafe6 from '../Images/CafeUnderground/13.jpg';
+
+import banerHeader from '../Images/Baner/2.jpeg';
+import baner1 from '../Images/Baner/1.jpeg';
+import baner2 from '../Images/Baner/3.jpeg';
+
 export const Projects=[
   {
-    image:'https://images.unsplash.com/photo-1615876063860-d971f6dca5dc?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mzh8fGludGVyaW9yJTIwZGVzaWduZXJ8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60',
+    Client: 'Ajinkya Sarode',
+    Area : '1300 sq.ft.',
+    Type: '2bhk',
+    Location: 'Ganga Platino,Kharadi',
+    image: ajinkyaHeader,
     text:"I've been an uber-fan of Dutch designer Faye Toogood for such a long time. Interiors, furniture, fashion - ",
     link:'',
     trending:1,
-    heading:'CCD',
     des:"I've been an uber-fan of Dutch designer Faye Toogood for such a long time",
     pic:[
-      'https://images.unsplash.com/photo-1615876063860-d971f6dca5dc?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mzh8fGludGVyaW9yJTIwZGVzaWduZXJ8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60',
-      'https://images.unsplash.com/photo-1572803090136-5247de70532f?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NDl8fGhvdGVsJTIwaW50ZXJpb3J8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60',
-      'https://images.unsplash.com/flagged/photo-1556438758-8d49568ce18e?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mjd8fGhvdGVsJTIwaW50ZXJpb3J8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60',
+      ajinkya1,
+      ajinkya2,
+      ajinkya3,
+      ajinkya4,
+      ajinkya5
     ],
-    date:'15th Mar 2020'
   },
   {
-    image:' https://images.unsplash.com/photo-1572803090136-5247de70532f?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NDl8fGhvdGVsJTIwaW50ZXJpb3J8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60',
+    Client: 'Tejas Machkar',
+    Area : '3200 sq.ft.',
+    Type: '4bhk',
+    Location: 'Baner,Pune',
+    image: banerHeader,
     text:"I've been an uber-fan of Dutch designer Faye Toogood for such a long time. Interiors, furniture, fashion - ",
     link:'',
     trending:1,
-    heading:'HOTEL',
     des:"I've been an uber-fan of Dutch designer Faye Toogood for such a long time",
     pic:[
-      'https://images.unsplash.com/photo-1615876063860-d971f6dca5dc?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mzh8fGludGVyaW9yJTIwZGVzaWduZXJ8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60',
-      'https://images.unsplash.com/photo-1572803090136-5247de70532f?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NDl8fGhvdGVsJTIwaW50ZXJpb3J8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60',
-      'https://images.unsplash.com/flagged/photo-1556438758-8d49568ce18e?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mjd8fGhvdGVsJTIwaW50ZXJpb3J8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60',
+      baner1,
+      baner2
     ],
-    date:'18th Oct 2020'
   },
   {
-    image:'https://images.unsplash.com/flagged/photo-1556438758-8d49568ce18e?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mjd8fGhvdGVsJTIwaW50ZXJpb3J8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60',
+    Client: 'Cafe Underground',
+    Area : '1800 sq.ft.',
+    Type: 'Cafe',
+    Location: 'Kothrud,Pune',
+    image: cafeHeader,
     text:"I've been an uber-fan of Dutch designer Faye Toogood for such a long time. Interiors, furniture, fashion - ",
     link:'',
     trending:1,
-    heading:'KITCHEN',
     des:"I've been an uber-fan of Dutch designer Faye Toogood for such a long time",
     pic:[
-      'https://images.unsplash.com/photo-1615876063860-d971f6dca5dc?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mzh8fGludGVyaW9yJTIwZGVzaWduZXJ8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60',
-      'https://images.unsplash.com/photo-1572803090136-5247de70532f?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NDl8fGhvdGVsJTIwaW50ZXJpb3J8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60',
-      'https://images.unsplash.com/flagged/photo-1556438758-8d49568ce18e?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mjd8fGhvdGVsJTIwaW50ZXJpb3J8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60',
+      cafe1,
+      cafe2,
+      cafe3,
+      cafe4,
+      cafe5,
+      cafe6
     ],
-    date:'28th Jan 2020'
-  },
-  {
-    image:'https://images.unsplash.com/photo-1611892441796-ae6af0ec2cc8?ixid=MXwxMjA3fDB8MHxzZWFyY2h8M3x8aW50ZXJpb3IlMjBkZXNpZ25lcnxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60',
-    text:"I've been an uber-fan of Dutch designer Faye Toogood for such a long time. Interiors, furniture, fashion - ",
-    link:'',
-    trending:1,
-    heading:'BEDROOM',
-    des:"I've been an uber-fan of Dutch designer Faye Toogood for such a long time",
-    pic:[
-      'https://images.unsplash.com/photo-1615876063860-d971f6dca5dc?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mzh8fGludGVyaW9yJTIwZGVzaWduZXJ8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60',
-      'https://images.unsplash.com/photo-1572803090136-5247de70532f?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NDl8fGhvdGVsJTIwaW50ZXJpb3J8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60',
-      'https://images.unsplash.com/flagged/photo-1556438758-8d49568ce18e?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mjd8fGhvdGVsJTIwaW50ZXJpb3J8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60',
-    ],
-    date:'15th July 2020'
-  },
-  {
-    image:'https://images.unsplash.com/photo-1615529182904-14819c35db37?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
-    text:"I've been an uber-fan of Dutch designer Faye Toogood for such a long time. Interiors, furniture, fashion - ",
-    link:'',
-    trending:1,
-    heading:'SHOP',
-    des:"I've been an uber-fan of Dutch designer Faye Toogood for such a long time",
-    pic:[
-      'https://images.unsplash.com/photo-1615876063860-d971f6dca5dc?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mzh8fGludGVyaW9yJTIwZGVzaWduZXJ8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60',
-      'https://images.unsplash.com/photo-1572803090136-5247de70532f?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NDl8fGhvdGVsJTIwaW50ZXJpb3J8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60',
-      'https://images.unsplash.com/flagged/photo-1556438758-8d49568ce18e?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mjd8fGhvdGVsJTIwaW50ZXJpb3J8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60',
-    ],
-    date:'21st Nov 2020'
-  },
-  {
-    image:'https://images.unsplash.com/photo-1617098591651-dd95032bc8bb?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mjd8fGludGVyaW9yJTIwZGVzaWduZXJ8ZW58MHx8MHw%3D&auto=format&fit=crop&w=600&q=60',
-    text:"I've been an uber-fan of Dutch designer Faye Toogood for such a long time. Interiors, furniture, fashion - ",
-    link:'',
-    trending:0,
-    heading:'SCHOOL',
-    des:"I've been an uber-fan of Dutch designer Faye Toogood for such a long time",
-    pic:[
-      'https://images.unsplash.com/photo-1615876063860-d971f6dca5dc?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mzh8fGludGVyaW9yJTIwZGVzaWduZXJ8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60',
-      'https://images.unsplash.com/photo-1572803090136-5247de70532f?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NDl8fGhvdGVsJTIwaW50ZXJpb3J8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60',
-      'https://images.unsplash.com/flagged/photo-1556438758-8d49568ce18e?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mjd8fGhvdGVsJTIwaW50ZXJpb3J8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60',
-    ],
-    date:'25th Dec 2020'
-  },
+  }
 ]

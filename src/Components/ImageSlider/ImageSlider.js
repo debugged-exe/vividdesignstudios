@@ -2,9 +2,9 @@ import React from 'react';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.scss";
 import "slick-carousel/slick/slick-theme.scss";
-import img1 from './Image/img1.jpg';
-import img2 from './Image/img2.jpg';
-import img3 from './Image/img3.jpg';
+import img1 from '../../Images/Slider-1.jpg';
+import img2 from '../../Images/Slider-2.jpg';
+import img3 from '../../Images/Slider-3.jpg';
 import './ImageSlider.scss';
 
 const ImageSlider = () => {

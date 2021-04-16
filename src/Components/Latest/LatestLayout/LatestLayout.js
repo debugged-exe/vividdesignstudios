@@ -4,6 +4,7 @@ import 'tachyons';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { Modal } from 'react-responsive-modal';
+import Carousel from 'react-elastic-carousel';
 
 class LatestLayout extends React.Component {
   constructor(props) {
@@ -13,22 +14,31 @@ class LatestLayout extends React.Component {
 render(){
   AOS.init();
   const array = Object.entries(this.props.project);
+  const breakPoints = [
+    { width: 1, itemsToShow: 1 },
+    { width: 550, itemsToShow: 1 },
+    { width: 850, itemsToShow: 2 },
+    { width: 1150, itemsToShow: 2 },
+    { width: 1450, itemsToShow: 2 },
+    { width: 1750, itemsToShow: 2 },
+  ]
   return (
     <div id="latest">
       <div>
         <div className="head" data-aos="fade-up" data-aos-duration="1000">
-          <h1>{array[4][1]}</h1>
-          <p>---- {array[7][1]} ----</p>
-          <hr className="w-20"/>
+          <h1>Latest</h1>
           <p>{array[5][1]}</p>
+          <hr className="w-20"/>
 
 
           <div className="container">
              <div className="img-container" data-aos="fade-right" data-aos-duration="1000">
-               <img width='100%' height='100%' src={array[0][1]}/>
+               <img width='100%' height='100%' src={array[4][1]}/>
                <div className="text">
-                 <h1>{array[4][1]}</h1>
-                 <p>---- {array[7][1]} ----</p>
+                 <h1>{array[0][1]}</h1>
+                 <p>{array[1][1]}</p>
+                 <p>{array[2][1]}</p>
+                 <p>{array[3][1]}</p>
                </div>
              </div>
              <div className="black-box pa4">
@@ -39,25 +49,18 @@ render(){
           </div>
          </div>
       </div>
-      <div className="gallery flex flex-wrap pt0">
-      {
-        array[6][1].map((item,index) => {
-          return(
-            <img
-            className="ma3 shadow-3"
-            src={item}
-            key={index}
-            data-aos="zoom-in-up"
-            data-aos-offset="-10"
-            data-aos-duration="1000"
-            />
-          );
-        })
-      }
-      </div>
-      <div className="location flex flex-column">
-        <p>Vivid Design Studio, SNO-29, B-20, Saidham Building, Opp. Reliance Fresh, Bharati Vidyapeeth Rd,
-        Shriram Nagar, Katraj, Pune, Maharashtra 411046</p>
+      <div className="gallery">
+        <Carousel breakPoints={breakPoints}>
+          {
+            array[9][1].map((item,index) => {
+              return(
+                <div className="image-item shadow-2" style={{width: `${index%2===0?'40vw':'75vw'}` }} key={index}>
+                  <img src={item} alt="image" style={{width: '100%', height: '100%'}}/>
+                </div>
+              );
+            })
+          }
+        </Carousel>
       </div>
     </div>
   );

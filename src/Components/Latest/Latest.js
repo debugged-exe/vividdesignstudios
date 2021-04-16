@@ -13,7 +13,7 @@ const Latest = ({project,showTrending}) => {
         { width: 1750, itemsToShow: 3 },
       ]
 	return (
-		<div className=' mb5'>
+		<div className='latest mb5'>
         <p className="heading1">TRENDING</p>
         <div>
           <Carousel breakPoints={breakPoints} >
