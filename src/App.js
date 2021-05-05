@@ -1,5 +1,9 @@
 import React from 'react';
 import Sidebar from './Components/Sidebar/Sidebar.js';
+import CommercialProject from './Components/Categories/CommercialProject/CommercialProject.js';
+import ResidentialProject from './Components/Categories/ResidentialProject/ResidentialProject.js';
+import Footer from './Components/Footer/Footer.js';
+import ProjectDisplay from './Components/ProjectDisplay/ProjectDisplay.js';
 import HomePage from './Pages/HomePage/HomePage.js';
 import CategoryPage from './Pages/CategoryPage/CategoryPage.js';
 import LatestPage from './Pages/LatestPage/LatestPage.js';
@@ -30,9 +34,13 @@ class App extends React.Component {
 			 this.setState({project:project});
 	 }
 
+   setProject = (project) => {
+     this.setState({project: project});
+   }
+
 	render() {
     return (
-      <div className="App">
+      <div className="App" style={{backgroundColor:'#1b1c1b'}}>
         <HashRouter>
           <Sidebar />
             <Switch>
@@ -40,10 +48,18 @@ class App extends React.Component {
                 <HomePage showCategories={this.showCategories} showTrending={this.showTrending} />
                 </Route>
                 <Route exact path='/Categoriesdecision' component={()=><CategoryPage product={this.state.product} />} />
-                <Route 
-                exact path='/Latest' 
+                <Route
+                exact path='/Latest'
                 render = {
                   () => this.state.project.Client?(<LatestPage project={this.state.project} />):(<Redirect to="/" />)
+                }
+                />
+                <Route exact path='/residential' component={()=><ResidentialProject setProject={this.setProject}/>}/>
+                <Route exact path='/commercial' component={()=><CommercialProject setProject={this.setProject}/>}/>
+                <Route exact path='/aboutus' component={()=><Footer/>}/>
+                <Route exact path='/projectview'
+                render = {
+                  () => this.state.project.Client?(<ProjectDisplay project={this.state.project}/>):(<Redirect to="/" />)
                 }
                 />
               </Switch>

@@ -35,6 +35,7 @@ export const Projects=[
       ajinkya4,
       ajinkya5
     ],
+    category:'residential',
   },
   {
     Client: 'Tejas Machkar',
@@ -50,6 +51,7 @@ export const Projects=[
       baner1,
       baner2
     ],
+    category:'residential',
   },
   {
     Client: 'Cafe Underground',
@@ -69,5 +71,6 @@ export const Projects=[
       cafe5,
       cafe6
     ],
+    category:'commercial',
   }
 ]

@@ -7,28 +7,24 @@ import {items} from '.././CategoryList.js';
 import { HashLink as Link } from 'react-router-hash-link';
 
 
-
 const CategoriesSlideshowdesktop = ({showCategories})=> {
 
     return(
       <div>
-      <h1 className="heading mt5 ml5">CATEGORIES</h1>
+      <h1 className="heading mt5 ml5 white">CATEGORIES</h1>
       <div className="category">
-        <div className="category-item shadow-2 ma3 pa3 bg-white">
+        <div className="category-item center shadow-2 ma3 pa3 bg-white">
           <div className="category-image">
             <img src={items[0].original} alt="image1" />
             <hr className="bottom-border"></hr>
             <hr className="right-border"></hr>
             <div className="number">01</div>
-            <div className="text">
-              <p>[Kitchen][Bedroom][Living room][Bathroom]</p>
-            </div>
           </div>
           <div className="category-description">
             <p className="category-header">Residential</p>
             <p className="category-para pa3">Pariatur laboris mollit commodo ut amet mollit ut id cillum proident reprehenderit nulla sed proident aliqua sunt dolor cupidatat magna nisi mollit sed ea reprehenderit consectetur tempor.</p>
             <div className="category-button">
-              <button className="butt">View</button>
+            <Link to='/residential/#residential '><button className="butt">View</button></Link>
               <hr className="btn-bottom"></hr>
               <hr className="right"></hr>
             </div>
@@ -36,13 +32,13 @@ const CategoriesSlideshowdesktop = ({showCategories})=> {
         </div>
 
 
-        <div className="category-item shadow-2 pa3 ma3 bg-white">
+        <div className="category-item center shadow-2 pa3 ma3 bg-white">
 
           <div className="category-description">
             <p className="category-header">Commercial</p>
             <p className="category-para pa3">Pariatur laboris mollit commodo ut amet mollit ut id cillum proident reprehenderit nulla sed proident aliqua sunt dolor cupidatat magna nisi mollit sed ea reprehenderit consectetur tempor.</p>
             <div className="category-button">
-              <button className="butt">View</button>
+              <Link to='/commercial/#commercial'><button className="butt">View</button></Link>
               <hr className="btn-bottom"></hr>
               <hr className="right"></hr>
             </div>
@@ -52,9 +48,7 @@ const CategoriesSlideshowdesktop = ({showCategories})=> {
             <hr className="bottom-border"></hr>
             <hr className="right-border"></hr>
             <div className="number">02</div>
-            <div className="text">
-              <p>[Office][Cafe][Restaurants and Bar]</p>
-            </div>
+
           </div>
         </div>
 
