@@ -5,7 +5,7 @@ import ResidentialProject from './Components/Categories/ResidentialProject/Resid
 import Footer from './Components/Footer/Footer.js';
 import ProjectDisplay from './Components/ProjectDisplay/ProjectDisplay.js';
 import HomePage from './Pages/HomePage/HomePage.js';
-import CategoryPage from './Pages/CategoryPage/CategoryPage.js';
+// import CategoryPage from './Pages/CategoryPage/CategoryPage.js';
 import LatestPage from './Pages/LatestPage/LatestPage.js';
 import './App.scss';
 import {
@@ -75,4 +75,3 @@ class App extends React.Component {
 }
 
 export default App;
-  // <Route exact path='/Categoriesdecision' component={()=><CategoryPage product={this.state.product} />} />

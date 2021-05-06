@@ -2,7 +2,6 @@ import React, {useState} from 'react';
 import 'tachyons';
 import {HiOutlineArrowNarrowRight} from 'react-icons/hi';
 import './CategoriesSlideshowdesktop.scss';
-import {items} from '.././CategoryList.js';
 import { HashLink as Link } from 'react-router-hash-link';
 
 
@@ -14,7 +13,7 @@ const CategoriesSlideshowdesktop = ({showCategories})=> {
       <div className="category">
         <div className="category-item center shadow-2 bg-white">
           <div className="category-image">
-            <img src={items[0].original} alt="image1" />
+            <img src="https://images.unsplash.com/photo-1556911220-bff31c812dba?ixid=MXwxMjA3fDB8MHxzZWFyY2h8M3x8a2l0Y2hlbnxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60" alt="image1" />
             <hr className="right-border"></hr>
             <hr className="bottom-border"></hr>
             <div className="number">01</div>
@@ -43,7 +42,7 @@ const CategoriesSlideshowdesktop = ({showCategories})=> {
             </div>
           </div>
           <div className="category-image">
-            <img src={items[2].original} alt="image1" />
+            <img src=' https://images.unsplash.com/photo-1572803090136-5247de70532f?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NDl8fGhvdGVsJTIwaW50ZXJpb3J8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60' alt="image1" />
             <hr className="right-border"></hr>
             <hr className="bottom-border"></hr>
             <div className="number">02</div>
