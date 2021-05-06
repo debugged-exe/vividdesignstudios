@@ -1,6 +1,5 @@
 import React, {useState} from 'react';
 import 'tachyons';
-import CategoriesSlideshowmobile from './CategoriesMobile/CategoriesSlideshowmobile.js';
 import CategoriesSlideshowdesktop from './CategoriesDesktop/CategoriesSlideshowdesktop.js';
 
 class CategoriesSlideshow extends React.Component {
@@ -28,7 +27,7 @@ class CategoriesSlideshow extends React.Component {
 
   if (isMobile) {
     return (
-      <CategoriesSlideshowmobile showCategories={this.props.showCategories}/>
+      <CategoriesSlideshowdesktop  showCategories={this.props.showCategories}/>
     );
   } else {
     return (

@@ -7,28 +7,28 @@ import './Connect.scss';
 
 const Connect = () => {
 	return (
-		<div className="connect-container">
+		<div className="connect-container" style={{textAlign:'left'}}>
 			<div className="social-links">
 				<p className="social-label mb4">Connect With Us</p>
 				<div className="social-logos">
-					<FaGooglePlusG size="2em" color="black" className="mr2 grow logos pointer"/>
-					<AiFillTwitterCircle size="2em" color="black" className="mr2 grow logos pointer"/>
-					<InstaLogo className="logos grow pointer black" style={{width: '30px', height: '30px', color: 'black'}}/>
+					<FaGooglePlusG size="2em" color="white" className="mr2 grow logos pointer"/>
+					<AiFillTwitterCircle size="2em" color="white" className="mr2 grow logos pointer"/>
+					<InstaLogo className="logos grow pointer white" style={{width: '30px', height: '30px', color: 'black'}}/>
 					<div className="links grow mb4 logos">
 						<a href="https://wa.me/919730000815" className="a flex justify-center items-center">
-							<FaWhatsapp size="2em" color="black" className="mr2 grow"/>
+							<FaWhatsapp size="2em" color="white" className="mr2 grow"/>
 						</a>
 					</div>
 				</div>
 				<div className="links ma2 mb3 logos">
 						<a href='mailto:info@vividdesignstudio.in' style={{fontSize: '18px', letterSpacing: '1px', fontWeight: 'bold'}} className="flex justify-center items-center">
-							<GoMail size="2em" color="black" className="mr2 "/>
+							<GoMail size="2em" color="white" className="mr2 "/>
 							info@vividdesignstudio.in
 						</a>
 					</div>
 					<div className="links logos ">
 						<a href="tel:9108087885581" style={{fontSize: '18px', letterSpacing: '1px', fontWeight: 'bold'}} className="flex justify-center items-center">
-							<FaPhoneAlt size="1.5em" color="black" className="mr2 "/>
+							<FaPhoneAlt size="1.5em" color="white" className="mr2 "/>
 							+91 08087885581
 						</a>
 					</div>

@@ -34,7 +34,7 @@
 
 				.prof
 				{
-					
+
 				}
 			}
 		}
@@ -48,8 +48,8 @@
 		}
 	}
 }
-@media only screen 
-   and (max-width : 320px) {
+@media only screen
+   and (max-width : 428px) {
    	.slider-container
    	{
 
@@ -60,6 +60,7 @@
    			{
    				top: 10%;
    				left: 5%;
+					margin-right: 25px;
 
    				.title
    				{
@@ -81,3 +82,37 @@
    		}
    	}
    }
+
+	 @media only screen
+	    and (max-width : 768px) {
+	    	.slider-container
+	    	{
+
+	    		.item-container
+	    		{
+
+	    			.label
+	    			{
+	    				top: 10%;
+	    				left: 20%;
+
+	    				.title
+	    				{
+	    					margin-bottom: 5px;
+	    				}
+
+	    				.subtitle
+	    				{
+	    					flex-direction: column;
+	    					justify-content: center;
+	    					align-items: center;
+
+	    					.prof
+	    					{
+	    						margin-bottom: none;
+	    					}
+	    				}
+	    			}
+	    		}
+	    	}
+	    }

@@ -1,7 +1,7 @@
 a
 {
 	text-decoration: none;
-	color: black;
+	color:white;
 }
 .connect-container
 {
@@ -9,7 +9,7 @@ a
 	width: 50vw;
 	margin: 20px;
 	margin-bottom: 115px;
-	border-right: 1.5px solid black;
+	border-left: 1.5px solid white;
 
 	.social-links
 	{
@@ -32,7 +32,7 @@ a
 		.logos
 		{
 			margin: 15px;
-			color: black;
+			color: white;
 		}
 	}
 
@@ -48,13 +48,28 @@ a
    and (max-width : 490px)
 {
 	.connect-container{
-	  border-right: none;
+	  border-left: none;
 		width: 80%;
 		margin-bottom:0px;
 
 				.address{
 					padding-left: 0px;
 					padding-right: 0px;
+				}
+}
+}
+
+@media only screen
+   and (max-width : 768px)
+{
+	.connect-container{
+	  border-left: none;
+		width: 80%;
+		margin-bottom:0px;
+
+				.address{
+					padding-left: 10%;
+					padding-right: 5%;
 				}
 }
 }

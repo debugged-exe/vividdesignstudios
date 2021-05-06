@@ -1,5 +1,6 @@
 import React from 'react';
 import * as FaIcons from 'react-icons/fa';
+import * as BsIcons from 'react-icons/bs';
 import * as AiIcons from 'react-icons/ai';
 import * as IoIcons from 'react-icons/io';
 import * as RiIcons from 'react-icons/ri';
@@ -13,27 +14,22 @@ export const SidebarData = [
 },
 {
 	title: 'Categories',
-	path: '/categories',
+	path: '/#category',
 	icon: <FaIcons.FaListUl />,
 	iconClosed: <RiIcons.RiArrowDownSFill />,
 	iconOpened: <RiIcons.RiArrowUpSFill />,
 	subNav: [
 		{
-			title: 'Cat1',
-			path: '/categories/#cat1',
-			icon: <IoIcons.IoIosPaper />
+			title: 'Residential',
+			path: '/residential/#residential',
+			icon: <BsIcons.BsFillPeopleFill/>
 		},
 		{
-			title: 'Cat2',
-			path: '/categories/#cat2',
-			icon: <IoIcons.IoIosPaper />
+			title: 'Commercial',
+			path: '/commercial/#commercial',
+			icon: <RiIcons.RiRestaurant2Fill/>
 		}
 	]
-},
-{
-	title: 'Our Projects',
-	path: '/projects',
-	icon: <GrIcons.GrProjects />
 },
 {
 	title: 'About Us',
@@ -41,13 +37,8 @@ export const SidebarData = [
 	icon: <FaIcons.FaInfo />
 },
 {
-	title: 'Collabs',
-	path: '/collabs',
-	icon: <FaIcons.FaUserFriends />
-},
-{
 	title: 'Contact Us',
-	path: '/contact',
+	path: '/aboutus/#contactus',
 	icon: <IoIcons.IoIosCall />
 },
 ]

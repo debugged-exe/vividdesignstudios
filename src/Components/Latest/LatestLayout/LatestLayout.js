@@ -25,7 +25,7 @@ render(){
   return (
     <div id="latest">
       <div>
-        <div className="head" data-aos="fade-up" data-aos-duration="1000">
+        <div className="head white" data-aos="fade-up" data-aos-duration="1000">
           <h1>Latest</h1>
           <p>{array[5][1]}</p>
           <hr className="w-20"/>

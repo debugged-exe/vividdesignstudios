@@ -14,8 +14,7 @@ const ResidentialProject = ({setProject}) => {
 			<br/> and Case Studies for Clients</h1>
 			<p className="pa0 gray">---------------------------------</p>
 	    <p className="gray f4">[Our portfolio]</p>
-
-          {
+         {
 						Projects.filter(item => item.category==='residential')
 						.map((item) => {
 							return(

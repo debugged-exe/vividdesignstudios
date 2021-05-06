@@ -26,7 +26,7 @@ class ContactUs extends React.PureComponent {
 
 	handleChange = (event) => {
 		const {value, name} = event.target;
-		this.this.setState({[name]: value});
+	  this.setState({[name]: value});
 	}
 
 	render() {

@@ -47,7 +47,7 @@ class App extends React.Component {
                 <Route exact path = '/'>
                 <HomePage showCategories={this.showCategories} showTrending={this.showTrending} />
                 </Route>
-                <Route exact path='/Categoriesdecision' component={()=><CategoryPage product={this.state.product} />} />
+
                 <Route
                 exact path='/Latest'
                 render = {
@@ -75,3 +75,4 @@ class App extends React.Component {
 }
 
 export default App;
+  // <Route exact path='/Categoriesdecision' component={()=><CategoryPage product={this.state.product} />} />
