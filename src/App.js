@@ -52,6 +52,7 @@ class App extends React.Component {
    }
 
   componentDidMount(){
+    this.setLoading();
     fetch('http://localhost:3000/project')
     .then(response=>response.json())
     .then(resp=>{
