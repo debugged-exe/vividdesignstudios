@@ -3,7 +3,6 @@ import ImageSlider from '../../Components/ImageSlider/ImageSlider.js';
 import CategoriesSlideshow from '../../Components/Categories/CategoriesSlideshow.js';
 import Latest from '../../Components/Latest/Latest.js';
 import './HomePage.scss';
-import {Projects} from '../../Databases/Projects.js';
 import { ParallaxProvider } from 'react-scroll-parallax';
 
 

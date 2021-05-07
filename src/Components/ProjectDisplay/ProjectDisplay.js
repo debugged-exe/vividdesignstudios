@@ -1,6 +1,6 @@
 import React from 'react';
 import './ProjectDisplay.scss';
-import {Projects} from '../../Databases/Projects.js';
+
 
 const ProjectDisplay = ({project}) => {
 	return (
