@@ -9,6 +9,13 @@ $base-color:#EAE7E5 ;
   letter-spacing: 2px;
 }
 
+.loader
+{
+  width: 100vw;
+  height: 100vh;
+  margin-top: 40vh;
+}
+
 * {
 	box-sizing: border-box;
 }

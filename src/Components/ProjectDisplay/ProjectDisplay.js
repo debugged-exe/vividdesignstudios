@@ -4,7 +4,7 @@ import {Projects} from '../../Databases/Projects.js';
 
 const ProjectDisplay = ({project}) => {
 	return (
-		<div className="project_container center">
+		<div id="projectDisplay" className="project_container center">
 
 			<h3 className="subHead">[Vivid Design Studios]</h3>
 

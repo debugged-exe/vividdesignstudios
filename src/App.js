@@ -7,7 +7,7 @@ import ProjectDisplay from './Components/ProjectDisplay/ProjectDisplay.js';
 import HomePage from './Pages/HomePage/HomePage.js';
 // import CategoryPage from './Pages/CategoryPage/CategoryPage.js';
 import LatestPage from './Pages/LatestPage/LatestPage.js';
-import ClipLoader from "react-spinners/ClipLoader";
+import HashLoader from "react-spinners/HashLoader";
 import './App.scss';
 import {
     BrowserRouter as Router,
@@ -25,16 +25,10 @@ class App extends React.Component {
 					 product:'',
            project:{},
            ProjectList: [],
-           loading:false
+           loading:true
 			 }
 	 }
 
-   setLoading=()=>{
-     this.setState({loading:true});
-     setTimeout(()=>{
-       this.setState({loading:false});
-     },6000)
-   }
 	 showCategories=(product)=>{
 			 this.setState({product:product});
 	 }
@@ -52,12 +46,14 @@ class App extends React.Component {
    }
 
   componentDidMount(){
-    this.setLoading();
     fetch('http://localhost:3000/project')
     .then(response=>response.json())
     .then(resp=>{
       if(resp[0].Client){
         this.setProjectList(resp);
+        setTimeout(()=>{
+            this.setState({loading:false});
+          },3000)
       }
     })
     .catch(err => {
@@ -71,9 +67,14 @@ class App extends React.Component {
       <div className="App" style={{backgroundColor:'#1b1c1b'}}>
       {
         loading ?
-         <ClipLoader color={"#ffffff"} loading={loading} size={150} /> :
+        <>
+          <Sidebar />
+         <div className="loader">
+          <HashLoader color={"gray"} loading={loading} size={150}/>
+         </div>
+         </> :
          <HashRouter>
-           <Sidebar />
+          <Sidebar />
              <Switch>
                  <Route exact path = '/'>
                  <HomePage ProjectList={ProjectList} showCategories={this.showCategories} showTrending={this.showTrending} />
@@ -94,9 +95,9 @@ class App extends React.Component {
                  }
                  />
                </Switch>
-             <footer className="pv3 ph3 ph5-m ph6-l white flex justify-center footer_class" style={{backgroundColor: "black"}}>
-               <small className="f6 db white" style={{textAlign: 'center'}}>© 2021
-               <b className="ttu"> Developed by Debugged.exe</b>. All Rights Reserved
+             <footer className="pv1 ph3 ph5-m ph6-l white flex justify-center footer_class" style={{backgroundColor: "black"}}>
+               <small className="f5 db white" style={{textAlign: 'center'}}>
+               <p style={{textTransform:'lowercase'}}> developed by <a href="https://debuggedexe.com" className="b grow">debugged.exe</a></p>
                </small>
              </footer>
          </HashRouter>

@@ -49,6 +49,22 @@ $font:'Open Sans Condensed', sans-serif;
 }
 .button-style{
   top:80%;
+  left:35%;
+  height:40px;
+  width:100px;
+}
+.heading1{
+  margin-left:20px;
+}
+}
+@media only screen
+   and (max-width : 320px) {
+.img-div{
+    height:85%;
+    padding-bottom:120px;
+}
+.button-style{
+  top:80%;
   left:27%;
   height:40px;
   width:100px;
