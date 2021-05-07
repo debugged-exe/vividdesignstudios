@@ -3,7 +3,7 @@ import './Latest.scss';
 import Carousel from 'react-elastic-carousel';
 import { HashLink as Link } from 'react-router-hash-link';
 
-const Latest = ({project,showTrending}) => {
+const Latest = ({showTrending,ProjectList}) => {
         const breakPoints = [
         { width: 1, itemsToShow: 1 },
         { width: 550, itemsToShow: 1 },
@@ -18,7 +18,7 @@ const Latest = ({project,showTrending}) => {
         <div>
           <Carousel breakPoints={breakPoints} >
             {
-              project.filter((item)=>(
+              ProjectList.filter((item)=>(
                 item.trending === 1
               )).map((item)=>(
                 <div style={{height:'450px',width:'330px',position:'relative'}}>

@@ -7,14 +7,14 @@ import {Projects} from '../../Databases/Projects.js';
 import { ParallaxProvider } from 'react-scroll-parallax';
 
 
-const HomePage = ({showCategories,showTrending}) => {
+const HomePage = ({ProjectList,showCategories,showTrending}) => {
 	return (
 		<div className="home-container" id="home">
 			<ImageSlider />
 			<span id="trending"></span>
 			 <div className="trending_cat">
 				<ParallaxProvider>
-					<Latest  project={Projects} showTrending={showTrending}/>
+					<Latest  ProjectList={ProjectList} showTrending={showTrending}/>
 					<CategoriesSlideshow  showCategories={showCategories}/>
 					</ParallaxProvider>
 				</div>
@@ -22,4 +22,4 @@ const HomePage = ({showCategories,showTrending}) => {
 	)
 }
 
-export default HomePage
+export default HomePage;

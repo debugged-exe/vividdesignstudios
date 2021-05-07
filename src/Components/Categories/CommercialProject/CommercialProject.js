@@ -4,9 +4,8 @@ import { HashLink as Link } from 'react-router-hash-link';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import './CommercialProject.scss';
-import {Projects} from '../../../Databases/Projects.js';
 
-const CommercialProject = ({setProject}) => {
+const CommercialProject = ({setProject, ProjectList}) => {
 	AOS.init();
 	return (
 		<div className=" white" id="commercial" style={{backgroundColor:'#1b1c1b'}}>
@@ -16,7 +15,7 @@ const CommercialProject = ({setProject}) => {
 	    <p className="gray f4">[Our portfolio]</p>
 
           {
-						Projects.filter(item => item.category==='commercial')
+						ProjectList.filter(item => item.category==='commercial')
 						.map((item) => {
 							return(
 								<div style={{background: `url(${item.image}) no-repeat center center`, backgroundSize: 'cover'}}className="bgimageresidential center mv5 ">

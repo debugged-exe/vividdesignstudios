@@ -19,8 +19,29 @@ class ContactUs extends React.PureComponent {
 	handleSubmit = (event) =>
 	{
 		event.prefentDefault();
-		console.log(this.state);
+	}
 
+  handleForm = () =>{
+		fetch('http://localhost:3000/contact', {
+				method: 'post',
+				headers: {'Content-Type': 'application/json'},
+				body: JSON.stringify({
+					name: this.state.name,
+					email: this.state.email,
+					message: this.state.message
+			})
+		})
+		.then(response => response.json())
+		.then(resp => {
+			if(resp==='Success')
+			{
+			alert('Your message was recieved successfully.Thank you for your feedback.')
+			}
+		})
+		.catch(err => {
+			console.log(err)
+			alert('OOPS....something went wrong.Please try again.')
+		})
 		this.setState({name: '', email: '', message: ''});
 	}
 
@@ -33,7 +54,7 @@ class ContactUs extends React.PureComponent {
 		return (
 			<div className="contact-container">
 				<p className="title">Contact Us</p>
-				<form onSubmit={this.handleSubmit} className="form-container center ">
+				<form onSubmit ={this.handleSubmit} className="form-container center ">
 					<FormInput
 					label="Name"
 					name="name"
@@ -58,7 +79,7 @@ class ContactUs extends React.PureComponent {
 					handleChange={this.handleChange}
 					required
 					/>
-					<CustomButton type="submit">Contact Us</CustomButton>
+					<CustomButton onClick={this.handleForm}>Contact Us</CustomButton>
 				</form>
 			</div>
 		)

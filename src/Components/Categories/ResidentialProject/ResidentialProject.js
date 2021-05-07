@@ -4,12 +4,10 @@ import { HashLink as Link } from 'react-router-hash-link';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import './ResidentialProject.scss';
-import {Projects} from '../../../Databases/Projects.js';
 
-const ResidentialProject = ({setProject}) => {
+const ResidentialProject = ({setProject, ProjectList}) => {
 	AOS.init();
 	return (
-
 		<div className=" white" style={{backgroundColor:'#1b1c1b'}}>
 		  <span  id="res"></span>
 			<h1 className="header">Some of Our Works
@@ -17,7 +15,7 @@ const ResidentialProject = ({setProject}) => {
 			<p className="pa0 gray">---------------------------------</p>
 	    <p className="gray f4">[Our portfolio]</p>
          {
-						Projects.filter(item => item.category==='residential')
+						ProjectList.filter(item => item.category==='residential')
 						.map((item) => {
 							return(
 								<div style={{background: `url(${item.image}) no-repeat center center`, backgroundSize: 'cover'}}className="bgimageresidential center mv5 ">
