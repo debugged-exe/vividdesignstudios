@@ -22,7 +22,7 @@ class ContactUs extends React.PureComponent {
 	}
 
   handleForm = () =>{
-		fetch('http://localhost:3000/contact', {
+		fetch('https://lit-river-88777.herokuapp.com/contact', {
 				method: 'post',
 				headers: {'Content-Type': 'application/json'},
 				body: JSON.stringify({

@@ -46,7 +46,7 @@ class App extends React.Component {
    }
 
   componentDidMount(){
-    fetch('http://localhost:3000/project')
+    fetch('https://lit-river-88777.herokuapp.com/project')
     .then(response=>response.json())
     .then(resp=>{
       if(resp[0].Client){
