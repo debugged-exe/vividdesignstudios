@@ -13,7 +13,7 @@ const CategoriesSlideshowdesktop = ({showCategories})=> {
       <div className="category">
         <div className="category-item center shadow-2 bg-white">
           <div className="category-image">
-            <img src="https://images.unsplash.com/photo-1556911220-bff31c812dba?ixid=MXwxMjA3fDB8MHxzZWFyY2h8M3x8a2l0Y2hlbnxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60" alt="image1" />
+            <img src="http://www.vividdesignstudio.in/images/3dViews/3.jpg" alt="image1" />
             <hr className="right-border"></hr>
             <hr className="bottom-border"></hr>
             <div className="number">01</div>
@@ -22,7 +22,7 @@ const CategoriesSlideshowdesktop = ({showCategories})=> {
             <p className="category-header">Residential</p>
             <p className="category-para">Pariatur laboris mollit commodo ut amet mollit ut id cillum proident reprehenderit nulla sed proident aliqua sunt dolor cupidatat magna nisi mollit sed ea reprehenderit consectetur tempor.</p>
             <div className="category-button">
-            <Link to='/residential/#residential '><button className="butt">View</button></Link>
+            <Link to='/residential/#res'><button className="butt">View</button></Link>
               <hr className="btn-bottom"></hr>
               <hr className="right"></hr>
             </div>
@@ -30,7 +30,7 @@ const CategoriesSlideshowdesktop = ({showCategories})=> {
         </div>
 
 
-        <div className="category-item center shadow-2 mt5 bg-white">
+        <div className="category-item center shadow-2 mt5 mb5 bg-white">
 
           <div className="category-description">
             <p className="category-header">Commercial</p>

@@ -22,6 +22,7 @@ const Footer = () => {
 	return (
 		<div className="white ma0" style={{  fontFamily: 'Open Sans Condensed'}}>
 			<div className="main-div" style={{textAlign:'left'}}>
+
 					<div className="bg-black aboutus_maindiv" style={{opacity:'0.7'}}>
 						<p className="f1 pa1 b tc">ABOUT  US</p>
 							<h1 className="pt4">WHO ARE WE?</h1>
@@ -46,9 +47,9 @@ const Footer = () => {
 						 <p className="f2">Our Best Services</p>
              <p className="f4 ph5" style={{textAlign:'left',lineHeight: 'calc(22/13)'}}>An interior designer is someone who plans, researches, coordinates, and manages such projects. Interior design is a multifaceted profession that includes conceptual development, space planning, site inspections, programming, research, communicating with the stakeholders of a project, construction management, and execution of the design.</p>
 						 <div className="category-button center">
-							 <Link to='/Latest'><button className="butt">View Project</button></Link>
-							 <hr className="btn-bottom"></hr>
-							 <hr className="right"></hr>
+							 <Link to='/#trending'><button className="butt1">View Project</button></Link>
+							 <hr className="btn-bottom1"></hr>
+							 <hr className="right1"></hr>
 						</div>
 
 					</div>

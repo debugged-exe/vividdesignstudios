@@ -49,7 +49,7 @@ class App extends React.Component {
                 </Route>
 
                 <Route
-                exact path='/Latest'
+                exact path='/latest'
                 render = {
                   () => this.state.project.Client?(<LatestPage project={this.state.project} />):(<Redirect to="/" />)
                 }

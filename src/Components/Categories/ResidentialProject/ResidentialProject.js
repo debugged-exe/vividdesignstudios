@@ -9,7 +9,9 @@ import {Projects} from '../../../Databases/Projects.js';
 const ResidentialProject = ({setProject}) => {
 	AOS.init();
 	return (
-		<div className=" white" id="residential" style={{backgroundColor:'#1b1c1b'}}>
+
+		<div className=" white" style={{backgroundColor:'#1b1c1b'}}>
+		  <span  id="res"></span>
 			<h1 className="header">Some of Our Works
 			<br/> and Case Studies for Clients</h1>
 			<p className="pa0 gray">---------------------------------</p>

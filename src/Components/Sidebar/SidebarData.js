@@ -9,7 +9,7 @@ import * as GrIcons from 'react-icons/gr';
 export const SidebarData = [
 {
 	title: 'Home',
-	path: '/',
+	path: '/#home',
 	icon: <AiIcons.AiFillHome />
 },
 {
@@ -21,7 +21,7 @@ export const SidebarData = [
 	subNav: [
 		{
 			title: 'Residential',
-			path: '/residential/#residential',
+			path: '/residential/#res',
 			icon: <BsIcons.BsFillPeopleFill/>
 		},
 		{

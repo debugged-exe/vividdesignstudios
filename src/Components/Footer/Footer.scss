@@ -34,12 +34,17 @@
 }
 .processbox{
   display: flex;
+	background-image: url("https://i.imgur.com/EHFqqIW.png");
+	 background-repeat: no-repeat;
+	 width: 100vw;
+	 height:auto;
 }
 .who_dis{
 margin-right: 10%;
 }
+
 .main-div{
-   background-image: url("https://images.unsplash.com/photo-1532622785990-d2c36a76f5a6?ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8Ymx1ZXByaW50fGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60");
+   background-image: url("https://i.imgur.com/yQ1wOIg.png");
    background-size: 100% 100%;
     background-repeat: no-repeat;
     width: 100vw;
@@ -66,6 +71,7 @@ margin-right: 10%;
 .process{
   width:30vw;
   height:auto;
+	background-color: #121312;
 }
 .bestservices{
   width:35vw;
@@ -76,7 +82,7 @@ margin-right: 10%;
   position: relative;
   width: 150px;
 
-  .butt
+  .butt1
   {
     width: 120px;
     height: 50px;
@@ -90,7 +96,7 @@ margin-right: 10%;
     transition: all 0.6s ease-out;
   }
 
-  .btn-bottom
+  .btn-bottom1
   {
     position: absolute;
     opacity: 0;
@@ -103,7 +109,7 @@ margin-right: 10%;
     transition: all 0.6s ease-in;
   }
 
-  .right
+  .right1
   {
     position: absolute;
     opacity: 0;
@@ -118,26 +124,27 @@ margin-right: 10%;
 
   &:hover
   {
-    .butt
+    .butt1
     {
       background:white;
       color:black;
       border: 1px solid gray;
     }
 
-    .btn-bottom
+    .btn-bottom1
     {
       transform: translateX(0%);
       opacity: 1;
     }
 
-    .right
+    .right1
     {
       transform: rotate(-90deg) translateX(0%);
       opacity: 1;
     }
   }
 }
+
 .testimonialback{
   background: url("https://i.imgur.com/88ZDxEE.jpg");
   background-size: 100% 100%;
@@ -175,6 +182,7 @@ margin-right: 10%;
       width:70vw;
       height:auto;
       margin-left:15vw;
+
     }
     .processbox{
       display:block;
