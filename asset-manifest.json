@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/vividdesignstudios/static/css/main.5f475c95.chunk.css",
-    "main.js": "/vividdesignstudios/static/js/main.0b8f16da.chunk.js",
-    "main.js.map": "/vividdesignstudios/static/js/main.0b8f16da.chunk.js.map",
+    "main.css": "/vividdesignstudios/static/css/main.600226f8.chunk.css",
+    "main.js": "/vividdesignstudios/static/js/main.d6cf4dde.chunk.js",
+    "main.js.map": "/vividdesignstudios/static/js/main.d6cf4dde.chunk.js.map",
     "runtime-main.js": "/vividdesignstudios/static/js/runtime-main.4aca8dbe.js",
     "runtime-main.js.map": "/vividdesignstudios/static/js/runtime-main.4aca8dbe.js.map",
     "static/css/2.462bec48.chunk.css": "/vividdesignstudios/static/css/2.462bec48.chunk.css",
-    "static/js/2.b4d7e0bf.chunk.js": "/vividdesignstudios/static/js/2.b4d7e0bf.chunk.js",
-    "static/js/2.b4d7e0bf.chunk.js.map": "/vividdesignstudios/static/js/2.b4d7e0bf.chunk.js.map",
+    "static/js/2.8edcaec3.chunk.js": "/vividdesignstudios/static/js/2.8edcaec3.chunk.js",
+    "static/js/2.8edcaec3.chunk.js.map": "/vividdesignstudios/static/js/2.8edcaec3.chunk.js.map",
     "static/js/3.9151b172.chunk.js": "/vividdesignstudios/static/js/3.9151b172.chunk.js",
     "static/js/3.9151b172.chunk.js.map": "/vividdesignstudios/static/js/3.9151b172.chunk.js.map",
     "index.html": "/vividdesignstudios/index.html",
     "static/css/2.462bec48.chunk.css.map": "/vividdesignstudios/static/css/2.462bec48.chunk.css.map",
-    "static/css/main.5f475c95.chunk.css.map": "/vividdesignstudios/static/css/main.5f475c95.chunk.css.map",
-    "static/js/2.b4d7e0bf.chunk.js.LICENSE.txt": "/vividdesignstudios/static/js/2.b4d7e0bf.chunk.js.LICENSE.txt",
+    "static/css/main.600226f8.chunk.css.map": "/vividdesignstudios/static/css/main.600226f8.chunk.css.map",
+    "static/js/2.8edcaec3.chunk.js.LICENSE.txt": "/vividdesignstudios/static/js/2.8edcaec3.chunk.js.LICENSE.txt",
     "static/media/Slider-1.4a63fa0f.jpg": "/vividdesignstudios/static/media/Slider-1.4a63fa0f.jpg",
     "static/media/Slider-2.93ed62b4.jpg": "/vividdesignstudios/static/media/Slider-2.93ed62b4.jpg",
     "static/media/Slider-3.c52ac3bd.jpg": "/vividdesignstudios/static/media/Slider-3.c52ac3bd.jpg",
@@ -26,8 +26,8 @@
   "entrypoints": [
     "static/js/runtime-main.4aca8dbe.js",
     "static/css/2.462bec48.chunk.css",
-    "static/js/2.b4d7e0bf.chunk.js",
-    "static/css/main.5f475c95.chunk.css",
-    "static/js/main.0b8f16da.chunk.js"
+    "static/js/2.8edcaec3.chunk.js",
+    "static/css/main.600226f8.chunk.css",
+    "static/js/main.d6cf4dde.chunk.js"
   ]
 }
