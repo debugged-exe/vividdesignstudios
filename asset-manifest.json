@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/vividdesignstudios/static/css/main.600226f8.chunk.css",
-    "main.js": "/vividdesignstudios/static/js/main.d6cf4dde.chunk.js",
-    "main.js.map": "/vividdesignstudios/static/js/main.d6cf4dde.chunk.js.map",
+    "main.js": "/vividdesignstudios/static/js/main.f46dfec2.chunk.js",
+    "main.js.map": "/vividdesignstudios/static/js/main.f46dfec2.chunk.js.map",
     "runtime-main.js": "/vividdesignstudios/static/js/runtime-main.4aca8dbe.js",
     "runtime-main.js.map": "/vividdesignstudios/static/js/runtime-main.4aca8dbe.js.map",
     "static/css/2.462bec48.chunk.css": "/vividdesignstudios/static/css/2.462bec48.chunk.css",
@@ -28,6 +28,6 @@
     "static/css/2.462bec48.chunk.css",
     "static/js/2.8edcaec3.chunk.js",
     "static/css/main.600226f8.chunk.css",
-    "static/js/main.d6cf4dde.chunk.js"
+    "static/js/main.f46dfec2.chunk.js"
   ]
 }
