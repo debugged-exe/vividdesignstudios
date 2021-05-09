@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/vividdesignstudios/static/css/main.481bd6b2.chunk.css",
-    "main.js": "/vividdesignstudios/static/js/main.14dbfcfc.chunk.js",
-    "main.js.map": "/vividdesignstudios/static/js/main.14dbfcfc.chunk.js.map",
+    "main.js": "/vividdesignstudios/static/js/main.602b1a07.chunk.js",
+    "main.js.map": "/vividdesignstudios/static/js/main.602b1a07.chunk.js.map",
     "runtime-main.js": "/vividdesignstudios/static/js/runtime-main.4aca8dbe.js",
     "runtime-main.js.map": "/vividdesignstudios/static/js/runtime-main.4aca8dbe.js.map",
     "static/css/2.462bec48.chunk.css": "/vividdesignstudios/static/css/2.462bec48.chunk.css",
@@ -19,8 +19,10 @@
     "static/media/Slider-3.c52ac3bd.jpg": "/vividdesignstudios/static/media/Slider-3.c52ac3bd.jpg",
     "static/media/Footer.scss": "/vividdesignstudios/static/media/appbackground.1bbd8eea.png",
     "static/media/HomePage.scss": "/vividdesignstudios/static/media/appbackgroundmain.4c2b1987.png",
+    "static/media/commercial.825862c6.jpg": "/vividdesignstudios/static/media/commercial.825862c6.jpg",
     "static/media/insta.c99f4bfb.svg": "/vividdesignstudios/static/media/insta.c99f4bfb.svg",
     "static/media/logo1.b9208b41.svg": "/vividdesignstudios/static/media/logo1.b9208b41.svg",
+    "static/media/residential.196b9605.jpg": "/vividdesignstudios/static/media/residential.196b9605.jpg",
     "static/media/slick-theme.scss": "/vividdesignstudios/static/media/slick.c94f7671.ttf"
   },
   "entrypoints": [
@@ -28,6 +30,6 @@
     "static/css/2.462bec48.chunk.css",
     "static/js/2.8edcaec3.chunk.js",
     "static/css/main.481bd6b2.chunk.css",
-    "static/js/main.14dbfcfc.chunk.js"
+    "static/js/main.602b1a07.chunk.js"
   ]
 }
