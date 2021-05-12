@@ -160,49 +160,7 @@ margin-right: 10%;
   padding-left:10%;
   padding-right: 5%;
 }
-@media only screen
-   and (max-width :498px){
-     .feature_list
-     {
-       grid-template-columns: 100%;
-     }
-     .aboutus_subdiv
-     {
-       width: 100vw;
-       height: 100vh;
-     }
-     .aboutus_maindiv{
-       padding: 4%;
-     }
-    .execute{
-      display: grid;
-      grid-template-columns: 100%;
-    }
-    .process{
-      width:70vw;
-      height:auto;
-      margin-left:15vw;
 
-    }
-    .processbox{
-      display:block;
-    }
-    .bestservices{
-      width:100vw;
-      margin-bottom:20vh;
-    }
-    .testimonial{
-      display: grid;
-      grid-template-columns:100%;
-    }
-    .carousel_item
-    {
-      padding:0;
-    }
-    .who_dis{
-    margin-right: 0%;
-    }
-   }
    @media only screen
       and (max-width :768px){
         .testimonialimage{
@@ -243,3 +201,46 @@ margin-right: 10%;
        margin-right: 0%;
        }
       }
+			@media only screen
+			   and (max-width :498px){
+			     .feature_list
+			     {
+			       grid-template-columns: 100%;
+			     }
+			     .aboutus_subdiv
+			     {
+			       width: 100vw;
+			       height: 100vh;
+			     }
+			     .aboutus_maindiv{
+			       padding: 4%;
+			     }
+			    .execute{
+			      display: grid;
+			      grid-template-columns: 100%;
+			    }
+			    .process{
+			      width:70vw;
+			      height:auto;
+			      margin-left:10vw;
+
+			    }
+			    .processbox{
+			      display:block;
+			    }
+			    .bestservices{
+			      width:100vw;
+			      margin-bottom:20vh;
+			    }
+			    .testimonial{
+			      display: grid;
+			      grid-template-columns:100%;
+			    }
+			    .carousel_item
+			    {
+			      padding:0;
+			    }
+			    .who_dis{
+			    margin-right: 0%;
+			    }
+			   }

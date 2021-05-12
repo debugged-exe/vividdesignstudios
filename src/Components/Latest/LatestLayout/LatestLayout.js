@@ -5,7 +5,6 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { Modal } from 'react-responsive-modal';
 import Carousel from 'react-elastic-carousel';
-//
 // Area: "1300 sq.ft."
 // Client: "Ajinkya Sarode"
 // Location: "Ganga Platino,Kharadi"
@@ -22,7 +21,6 @@ class LatestLayout extends React.Component {
   constructor(props) {
   super(props);
 }
-
 render(){
   AOS.init();
   const array = Object.entries(this.props.project);
@@ -38,12 +36,10 @@ render(){
   return (
     <div id="latest">
     <div>
-      <div className="head white" data-aos="fade-up" data-aos-duration="1000">
+      <div className="head black" data-aos="fade-up" data-aos-duration="1000">
         <h1>Latest</h1>
-        <p>{array[9][1]}</p>
+        <p className="ph5" style={{textAlign:'left'}}>{array[9][1]}</p>
         <hr className="w-20"/>
-
-
         <div className="container">
            <div className="img-container" data-aos="fade-right" data-aos-duration="1000">
              <img width='100%' height='100%' src={array[6][1]}/>
@@ -56,69 +52,26 @@ render(){
            </div>
            <div className="black-box pa4">
               <p className="di text">
-                        VIVID DESIGN STUDIOS
+                    VIVID DESIGN STUDIOS
               </p>
            </div>
         </div>
        </div>
     </div>
     <div className="gallery">
-      <Carousel breakPoints={breakPoints}>
+      <div className="gridLayout">
         {
           array[0][1].map((item,index) => {
             return(
-              <div className="image-item shadow-2" style={{width: `${index%2===0?'40vw':'75vw'}` }} key={index}>
-                <img src={item} alt="image" style={{width: '100%', height: '100%'}}/>
-              </div>
+                <img src={item} alt="image" className="gridimage1" style={{objectFit:'fill'}}/>
             );
           })
         }
-      </Carousel>
+      </div>
     </div>
-
-
     </div>
   );
 }
 }
 
 export default LatestLayout;
-//
-// <div>
-//   <div className="head white" data-aos="fade-up" data-aos-duration="1000">
-//     <h1>Latest</h1>
-//     <p>{array[5][1]}</p>
-//     <hr className="w-20"/>
-//
-//
-//     <div className="container">
-//        <div className="img-container" data-aos="fade-right" data-aos-duration="1000">
-//          <img width='100%' height='100%' src={array[4][1]}/>
-//          <div className="text">
-//            <h1>{array[0][1]}</h1>
-//            <p>{array[1][1]}</p>
-//            <p>{array[2][1]}</p>
-//            <p>{array[3][1]}</p>
-//          </div>
-//        </div>
-//        <div className="black-box pa4">
-//           <p className="di text">
-//                     VIVID DESIGN STUDIOS
-//           </p>
-//        </div>
-//     </div>
-//    </div>
-// </div>
-// <div className="gallery">
-//   <Carousel breakPoints={breakPoints}>
-//     {
-//       array[9][1].map((item,index) => {
-//         return(
-//           <div className="image-item shadow-2" style={{width: `${index%2===0?'40vw':'75vw'}` }} key={index}>
-//             <img src={item} alt="image" style={{width: '100%', height: '100%'}}/>
-//           </div>
-//         );
-//       })
-//     }
-//   </Carousel>
-// </div>

@@ -20,7 +20,7 @@ const Footer = () => {
 	{ width: 1750, itemsToShow: 3 },
 ]
 	return (
-		<div className="white ma0" style={{  fontFamily: 'Open Sans Condensed'}}>
+		<div className="white ma0" style={{  fontFamily: 'Open Sans Condensed',backgroundColor:'#1b1c1b'}}>
 			<div className="main-div" style={{textAlign:'left'}}>
 
 					<div className="bg-black aboutus_maindiv" style={{opacity:'0.7'}}>

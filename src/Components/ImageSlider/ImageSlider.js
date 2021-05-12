@@ -29,7 +29,7 @@ const ImageSlider = () => {
 						<p className="title">Vivid Design Studios</p>
 						<p className="subtitle">
 							<p className="prof">Interior Designer |&nbsp;</p>
-							<p className="prof">Architect |&nbsp;</p> 
+							<p className="prof">Architect |&nbsp;</p>
 							<p className="prof">Civil Engineer</p>
 						</p>
 					</div>
@@ -40,7 +40,7 @@ const ImageSlider = () => {
 						<p className="title">Vivid Design Studios</p>
 						<p className="subtitle">
 							<p className="prof">Interior Designer |&nbsp;</p>
-							<p className="prof">Architect |&nbsp;</p> 
+							<p className="prof">Architect |&nbsp;</p>
 							<p className="prof">Civil Engineer</p>
 						</p>
 					</div>
@@ -51,7 +51,7 @@ const ImageSlider = () => {
 						<p className="title">Vivid Design Studios</p>
 						<p className="subtitle">
 							<p className="prof">Interior Designer |&nbsp;</p>
-							<p className="prof">Architect |&nbsp;</p> 
+							<p className="prof">Architect |&nbsp;</p>
 							<p className="prof">Civil Engineer</p>
 						</p>
 					</div>

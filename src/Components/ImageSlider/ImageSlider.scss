@@ -3,7 +3,6 @@
 	.item-container
 	{
 		position: relative;
-
 		.label
 		{
 			display: flex;
@@ -11,11 +10,15 @@
 			justify-content: center;
 			align-items: center;
 			position: absolute;
-			top: 38%;
-			left: 25%;
-			color: black;
+			top: 0%;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background: black;
+			color:white;
 			text-transform: uppercase;
 			font-family: 'Montserrat', sans-serif;
+			opacity: 0.6;
 
 			.title
 			{
@@ -55,7 +58,6 @@
 
    		.item-container
    		{
-
    			.label
    			{
    				top: 10%;
@@ -82,7 +84,6 @@
    		}
    	}
    }
-
 	 @media only screen
 	    and (max-width : 768px) {
 	    	.slider-container

@@ -3,26 +3,28 @@ import 'tachyons';
 import {HiOutlineArrowNarrowRight} from 'react-icons/hi';
 import './CategoriesSlideshowdesktop.scss';
 import { HashLink as Link } from 'react-router-hash-link';
+import residential from '../../../Images/residential.jpg';
+import commercial from '../../../Images/commercial.jpg';
 
 
 const CategoriesSlideshowdesktop = ({showCategories})=> {
 
     return(
       <div id="category">
-      <h1 className="heading mt5 ml5 white">CATEGORIES</h1>
+      <h1 className="heading mt5 ml5 black">CATEGORIES</h1>
       <div className="category">
-        <div className="category-item center shadow-2 bg-white">
+        <div className="category-item center bg-white">
           <div className="category-image">
-            <img src="http://www.vividdesignstudio.in/images/3dViews/3.jpg" alt="image1" />
+            <img src={residential} alt="image1" style={{objectFit:'fill'}}/>
             <hr className="right-border"></hr>
             <hr className="bottom-border"></hr>
             <div className="number">01</div>
           </div>
           <div className="category-description">
             <p className="category-header">Residential</p>
-            <p className="category-para">Pariatur laboris mollit commodo ut amet mollit ut id cillum proident reprehenderit nulla sed proident aliqua sunt dolor cupidatat magna nisi mollit sed ea reprehenderit consectetur tempor.</p>
+            <p className="category-para ph3 "style={{textAlign:'left'}}>Home is a space that is pretty personal and  holds different meanings for every family. We, at Vivid Design Studio, try our best to integrate every family’s personality into the home interiors. We curate the best designs and styles to match our clients and inspire the feeling of ‘home’ within any four walls.</p>
             <div className="category-button">
-            <Link to='/residential/#res'><button className="butt">View</button></Link>
+            <Link to='/residential/#res'><button className="butt mb3">View</button></Link>
               <hr className="btn-bottom"></hr>
               <hr className="right"></hr>
             </div>
@@ -30,11 +32,11 @@ const CategoriesSlideshowdesktop = ({showCategories})=> {
         </div>
 
 
-        <div className="category-item center shadow-2 mt5 mb5 bg-white">
+        <div className="category-item center mt5 mb5 bg-white">
 
           <div className="category-description">
             <p className="category-header">Commercial</p>
-            <p className="category-para ">Pariatur laboris mollit commodo ut amet mollit ut id cillum proident reprehenderit nulla sed proident aliqua sunt dolor cupidatat magna nisi mollit sed ea reprehenderit consectetur tempor.</p>
+            <p className="category-para ph3 " style={{textAlign:'left'}}>Crafting a welcoming, functional space with a good energy is at the center of interior decor for a commercial space. The ambiance of a place plays a vital role and adds up to the pleasure.Keeping this in mind, we provide refined designs, tailored for our clients concepts and requirements, for a timeless and chic commercial property.</p>
             <div className="category-button">
               <Link to='/commercial/#commercial'><button className="butt">View</button></Link>
               <hr className="btn-bottom"></hr>
@@ -42,7 +44,7 @@ const CategoriesSlideshowdesktop = ({showCategories})=> {
             </div>
           </div>
           <div className="category-image">
-            <img src=' https://images.unsplash.com/photo-1572803090136-5247de70532f?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NDl8fGhvdGVsJTIwaW50ZXJpb3J8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60' alt="image1" />
+            <img src={commercial} alt="image1" style={{objectFit:'fill'}}/>
             <hr className="right-border"></hr>
             <hr className="bottom-border"></hr>
             <div className="number">02</div>

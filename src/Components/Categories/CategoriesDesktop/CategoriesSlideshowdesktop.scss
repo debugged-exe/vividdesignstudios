@@ -4,7 +4,7 @@
 	font-size: 45px;
 	letter-spacing: 1px;
 	text-align: left;
-	border-left: 4px solid white;
+	border-left: 4px solid black;
 	padding-left: 10px;
 }
 .category
@@ -204,6 +204,9 @@
 
 @media only screen
    and (max-width :428px){
+		 .heading{
+			 margin-left:5%;
+		 }
 		 .category{
 			 padding: none;
 			 margin: none;

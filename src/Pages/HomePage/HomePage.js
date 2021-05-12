@@ -9,7 +9,7 @@ import { ParallaxProvider } from 'react-scroll-parallax';
 const HomePage = ({ProjectList,showCategories,showTrending}) => {
 	return (
 		<div className="home-container" id="home">
-			<ImageSlider />
+			<ImageSlider/>
 			<span id="trending"></span>
 			 <div className="trending_cat">
 				<ParallaxProvider>

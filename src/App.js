@@ -64,7 +64,7 @@ class App extends React.Component {
 	render() {
     const {ProjectList,loading} = this.state;
     return (
-      <div className="App" style={{backgroundColor:'#1b1c1b'}}>
+      <div className="App" style={{backgroundColor:'white'}}>
       {
         loading ?
         <>

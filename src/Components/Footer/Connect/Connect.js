@@ -11,9 +11,15 @@ const Connect = () => {
 			<div className="social-links">
 				<p className="social-label mb4">Connect With Us</p>
 				<div className="social-logos">
-					<FaGooglePlusG size="2em" color="white" className="mr2 grow logos pointer"/>
-					<AiFillTwitterCircle size="2em" color="white" className="mr2 grow logos pointer"/>
-					<InstaLogo className="logos grow pointer white" style={{width: '30px', height: '30px', color: 'black'}}/>
+					<a href="https://www.google.co.in/search?q=vivid+design+studio">
+					   <FaGooglePlusG size="2em" color="white" className="mr2 grow logos pointer"/>
+          </a>
+					<a href="https://www.facebook.com/vividstudio8/">
+					  <FaFacebookF size="1.5em" color="white" className="mr2 grow logos pointer"/>
+          </a>
+					<a href="https://www.instagram.com/interiorvivid/">
+					    <InstaLogo className="logos grow pointer white" style={{width: '30px', height: '30px', color: 'black'}}/>
+          </a>
 					<div className="links grow mb4 logos">
 						<a href="https://wa.me/919730000815" className="a flex justify-center items-center">
 							<FaWhatsapp size="2em" color="white" className="mr2 grow"/>

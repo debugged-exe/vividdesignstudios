@@ -14,7 +14,7 @@ const Latest = ({showTrending,ProjectList}) => {
       ]
 	return (
 		<div className='latest mb5'>
-        <p className="heading1 white">TRENDING</p>
+        <p className="heading1 black">TRENDING</p>
         <div>
           <Carousel breakPoints={breakPoints} >
             {
@@ -36,7 +36,6 @@ const Latest = ({showTrending,ProjectList}) => {
             }
           </Carousel>
         </div>
-
 		</div>
 	)
 }

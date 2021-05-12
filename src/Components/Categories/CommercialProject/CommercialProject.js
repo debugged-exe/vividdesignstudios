@@ -8,7 +8,7 @@ import './CommercialProject.scss';
 const CommercialProject = ({setProject, ProjectList}) => {
 	AOS.init();
 	return (
-		<div className=" white" id="commercial" style={{backgroundColor:'#1b1c1b'}}>
+		<div className="black" id="commercial" style={{backgroundColor:'white'}}>
 			<h1 className="header">Some of Our Works
 			<br/> and Case Studies for Clients</h1>
 			<p className="pa0 gray">---------------------------------</p>
@@ -18,7 +18,7 @@ const CommercialProject = ({setProject, ProjectList}) => {
 						ProjectList.filter(item => item.category==='commercial')
 						.map((item) => {
 							return(
-								<div style={{background: `url(${item.image}) no-repeat center center`, backgroundSize: 'cover'}}className="bgimageresidential center mv5 ">
+								<div style={{background: `url(${item.image}) no-repeat center center`, backgroundSize: 'cover'}}className="bgimageresidential center mv5 flex flex-column justify-center">
 								<div className='tint'>
 									<div className="gridElement"></div>
 									<div className="gridElement"></div>
@@ -37,7 +37,7 @@ const CommercialProject = ({setProject, ProjectList}) => {
 									<div className="gridElement"></div>
 								</div>
 								   <div className="description-container ">
-			               <h1 data-aos="fade-left" data-aos-duration="1000">{item.Client}</h1>
+			               <h1 data-aos="fade-left" style={{textAlign:'left'}} data-aos-duration="1000">{item.Client}</h1>
 										 <div className="list">
 										 	<p className="pa0" data-aos="fade-left" data-aos-duration="1000" data-aos-offset="145">Area: {item.Area}</p>
 											<p className="pa0" data-aos="fade-left" data-aos-duration="1000" data-aos-offset="145">Type: {item.Type}</p>

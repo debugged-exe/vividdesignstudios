@@ -8,7 +8,7 @@ import './ResidentialProject.scss';
 const ResidentialProject = ({setProject, ProjectList}) => {
 	AOS.init();
 	return (
-		<div className=" white" style={{backgroundColor:'#1b1c1b'}}>
+		<div className="black" style={{backgroundColor:'white'}}>
 		  <span  id="res"></span>
 			<h1 className="header">Some of Our Works
 			<br/> and Case Studies for Clients</h1>
