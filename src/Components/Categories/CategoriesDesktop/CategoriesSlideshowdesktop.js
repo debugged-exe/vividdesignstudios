@@ -15,7 +15,7 @@ const CategoriesSlideshowdesktop = ({showCategories})=> {
       <div className="category">
         <div className="category-item center bg-white">
           <div className="category-image">
-            <img src={residential} alt="image1" style={{objectFit:'fill'}}/>
+            <img src={residential} alt="image1"/>
             <hr className="right-border"></hr>
             <hr className="bottom-border"></hr>
             <div className="number">01</div>
@@ -44,7 +44,7 @@ const CategoriesSlideshowdesktop = ({showCategories})=> {
             </div>
           </div>
           <div className="category-image">
-            <img src={commercial} alt="image1" style={{objectFit:'fill'}}/>
+            <img src={commercial} alt="image1" style={{objectFit:'cover'}}/>
             <hr className="right-border"></hr>
             <hr className="bottom-border"></hr>
             <div className="number">02</div>

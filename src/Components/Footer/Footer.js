@@ -83,7 +83,7 @@ const Footer = () => {
 						<Carousel className="bg-black ml2" breakPoints={breakPoints} style={{textAlign: 'left', opacity:'0.8'}}>
 							<div className="carousel_item ">
 								<p className="f2">WHAT CLIENT SAY</p>
-								<p className="f3 gray">-[Token of Appriciations]</p>
+								<p className="f3 gray">-[Token of Appreciations]</p>
 								<p className="f3">" I am one of the happiest customer, they are very innovative and versitile, always come up with fresh design which is sutaible for our requirments. "</p>
 								<p>-Vishal Shete</p>
 								<p>Engineer</p>
