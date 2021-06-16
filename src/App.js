@@ -70,7 +70,7 @@ class App extends React.Component {
         <>
           <Sidebar />
          <div className="loader">
-          <HashLoader color={"gray"} loading={loading} size={150}/>
+          <HashLoader color={"gray"} loading={loading} size={150}>abc</HashLoader>
          </div>
          </> :
          <HashRouter>

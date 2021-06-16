@@ -27,7 +27,7 @@ const Latest = ({showTrending,ProjectList}) => {
                     <p className="pl3 pr3 description"> {item.text}</p>
                   </div>
                   <Link to='/latest/#latest' onClick={()=>showTrending(item)} ><button
-                  className="white center button-style" >
+                  className="center button-style" >
                   READ
                   </button></Link>
                 </div>

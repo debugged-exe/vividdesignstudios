@@ -44,7 +44,8 @@ const ResidentialProject = ({setProject, ProjectList}) => {
 											<p className="pa0" data-aos="fade-left" data-aos-duration="1000" data-aos-offset="145">Location: {item.Location}</p>
 										 </div>
 										 <div className="category-button">
-				               <Link to='/projectview/#projectDisplay' onClick={() => setProject(item)}><button className="butt" data-aos="fade-left" data-aos-duration="1000" data-aos-offset="150">View Project</button></Link>
+				               <Link to='/projectview/#projectDisplay' onClick={() => setProject(item)}>
+											 <button className="butt" data-aos="fade-left" data-aos-duration="1000" data-aos-offset="150">View Project</button></Link>
 				               <hr className="btn-bottom"></hr>
 				               <hr className="right"></hr>
 				             </div>
