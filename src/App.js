@@ -68,7 +68,6 @@ class App extends React.Component {
       {
         loading ?
         <>
-          <Sidebar />
          <div className="loader">
           <HashLoader color={"gray"} loading={loading} size={150}>abc</HashLoader>
          </div>
