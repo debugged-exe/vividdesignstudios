@@ -18,7 +18,7 @@ const CommercialProject = ({setProject, ProjectList}) => {
 						ProjectList.filter(item => item.category==='commercial')
 						.map((item) => {
 							return(
-								<div style={{background: `url(${item.image}) no-repeat center center`, backgroundSize: 'cover'}}className="bgimageresidential center mv5 flex flex-column justify-center">
+								<div style={{background: `url(${item.image}) no-repeat center center`, backgroundSize: 'cover'}} className="bgimageresidential center mv5 flex flex-column justify-center">
 								<div className='tint'>
 									<div className="gridElement"></div>
 									<div className="gridElement"></div>

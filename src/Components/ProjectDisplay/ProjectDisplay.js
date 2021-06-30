@@ -17,7 +17,7 @@ const ProjectDisplay = ({project}) => {
 				project.pic.map((item,index)=>{
 					return(
 					<div className="gridimage" key={index}>
-						<img className="image-class" style={{objectFit:'cover'}} src={item}/>
+						<img loading="lazy" className="image-class" style={{objectFit:'fill'}} src={item}/>
 						<div className="opacity_div"></div>
 					</div>
 				)

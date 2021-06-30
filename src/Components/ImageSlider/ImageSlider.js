@@ -24,7 +24,7 @@ const ImageSlider = () => {
 		<div className="slider-container" >
 			<Slider {...settings} style={{width: '99.56vw', height: '100vh', overflow: 'hidden'}}>
 				<div className="item-container">
-					<img src={img1} alt="Image"/>
+					<img className="img" loading="lazy" src={img1} alt="Image"/>
 					<div className="label">
 						<p className="title">Vivid Design Studios</p>
 						<p className="subtitle">
@@ -35,7 +35,7 @@ const ImageSlider = () => {
 					</div>
 				</div>
 				<div className="item-container">
-					<img src={img2} alt="Image"/>
+					<img className="img" loading="lazy" src={img2} alt="Image"/>
 					<div className="label">
 						<p className="title">Vivid Design Studios</p>
 						<p className="subtitle">
@@ -46,7 +46,7 @@ const ImageSlider = () => {
 					</div>
 				</div>
 				<div className="item-container">
-					<img src={img3} alt="Image"/>
+					<img className="img" loading="lazy" src={img3} alt="Image"/>
 					<div className="label">
 						<p className="title">Vivid Design Studios</p>
 						<p className="subtitle">

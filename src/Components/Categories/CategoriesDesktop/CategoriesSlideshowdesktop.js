@@ -15,7 +15,7 @@ const CategoriesSlideshowdesktop = ({showCategories})=> {
       <div className="category">
         <div className="category-item center bg-white">
           <div className="category-image">
-            <img src={residential} alt="image1"/>
+            <img src={residential} loading="lazy" alt="image1"/>
             <hr className="right-border"></hr>
             <hr className="bottom-border"></hr>
             <div className="number">01</div>
@@ -44,7 +44,7 @@ const CategoriesSlideshowdesktop = ({showCategories})=> {
             </div>
           </div>
           <div className="category-image">
-            <img src={commercial} alt="image1" style={{objectFit:'cover'}}/>
+            <img loading="lazy" src={commercial} alt="image1" style={{objectFit:'cover'}}/>
             <hr className="right-border"></hr>
             <hr className="bottom-border"></hr>
             <div className="number">02</div>
@@ -59,22 +59,3 @@ const CategoriesSlideshowdesktop = ({showCategories})=> {
 }
 
 export default CategoriesSlideshowdesktop;
-
- // {
- //           items.map((item)=>(
- //              <div  className="flex justify-center ma5 container shadow-2">
- //                <div className="image-container">
- //                  <a href={item.link}>
- //                    <img src={item.original} className="grow"/>
- //                  </a>
- //                </div>
- //                <div className="description">
- //                  <h1>{item.des}</h1>
- //                  <p>{item.para}</p>
- //                  <Link to='/Categoriesdecision' onClick={()=>showCategories(item.name)} >
- //                  <HiOutlineArrowNarrowRight  className="mt5 arrow" size="5rem"/>
- //                  </Link>
- //                </div>
- //              </div>
- //           ))
- //         }

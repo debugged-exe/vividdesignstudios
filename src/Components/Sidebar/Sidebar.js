@@ -29,7 +29,7 @@ const Sidebar = () => {
 					<div className="nav-cross">
 						<AiIcons.AiOutlineClose size={25} onClick={showSidebar} />
 					</div>
-					<img src={Logo} alt="React Logo" style={{width: '75%', margin:'10px'}}/>
+					<img loading="lazy" src={Logo} alt="React Logo" style={{width: '75%', margin:'10px'}}/>
 					{
 						SidebarData.map((item,index) => {
 							return(

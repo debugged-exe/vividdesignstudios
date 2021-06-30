@@ -42,7 +42,7 @@ render(){
         <hr className="w-20"/>
         <div className="container">
            <div className="img-container" data-aos="fade-right" data-aos-duration="1000">
-             <img width='100%' height='100%' src={array[6][1]}/>
+             <img loading="lazy" width='100%' height='100%' src={array[6][1]}/>
              <div className="text">
                <h1>{array[2][1]}</h1>
                <p>{array[3][1]}</p>
@@ -63,7 +63,7 @@ render(){
         {
           array[0][1].map((item,index) => {
             return(
-                <img src={item} alt="image" className="gridimage1" style={{objectFit:'fill'}}/>
+                <img loading="lazy" src={item} alt="image" className="gridimage1" style={{objectFit:'fill'}}/>
             );
           })
         }

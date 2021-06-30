@@ -42,7 +42,7 @@
 			}
 		}
 
-		img
+		.img
 		{
 			width: 100vw;
 			height: 100vh;
@@ -95,7 +95,7 @@
 
 			   				.title
 			   				{
-			   					font-size: 25px;
+			   					font-size:30px;
 									margin-bottom: 15px;
 			   				}
 
@@ -112,6 +112,14 @@
 			   					}
 			   				}
 			   			}
+							.img
+							{
+								width: 100vw;
+								height:80vh;
+								object-fit:fill;
+								opacity: 0.8;
+							}
+
 			   		}
 			   	}
 			   }

@@ -23,7 +23,7 @@ const Latest = ({showTrending,ProjectList}) => {
               )).map((item)=>(
                 <div style={{height:'450px',width:'330px',position:'relative'}}>
                   <div className="img-div shadow-2">
-                    <img  className="grow" src={item.image}  style={{width:'100%',height:'80%'}}/>
+                    <img loading="lazy" className="grow" src={item.image}  style={{width:'100%',height:'80%'}}/>
                     <p className="pl3 pr3 description"> {item.text}</p>
                   </div>
                   <Link to='/latest/#latest' onClick={()=>showTrending(item)} ><button
