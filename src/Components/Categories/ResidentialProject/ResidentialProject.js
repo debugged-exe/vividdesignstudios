@@ -18,7 +18,7 @@ const ResidentialProject = ({setProject, ProjectList}) => {
 						ProjectList.filter(item => item.category==='residential')
 						.map((item) => {
 							return(
-								<div style={{background: `url(${item.image}) no-repeat center center`, backgroundSize: 'cover'}}className="bgimageresidential center mv5 ">
+								<div style={{background: `url(${item.image}) no-repeat center center`}}className="residential-div center mv4 ">
 								<div className='tint'>
 									<div className="gridElement"></div>
 									<div className="gridElement"></div>
@@ -36,7 +36,7 @@ const ResidentialProject = ({setProject, ProjectList}) => {
 									<div className="gridElement"></div>
 									<div className="gridElement"></div>
 								</div>
-								   <div className="description-container ">
+								   <div className="description-div ">
 			               <h1 data-aos="fade-left" data-aos-duration="1000">{item.Client}</h1>
 										 <div className="list">
 										 	<p className="pa0" data-aos="fade-left" data-aos-duration="1000" data-aos-offset="145">Area: {item.Area}</p>

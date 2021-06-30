@@ -18,7 +18,8 @@ const CommercialProject = ({setProject, ProjectList}) => {
 						ProjectList.filter(item => item.category==='commercial')
 						.map((item) => {
 							return(
-								<div style={{background: `url(${item.image}) no-repeat center center`, backgroundSize: 'cover'}} className="bgimagecommercial center mv5 flex flex-column justify-center">
+								<div className="commercial-div center mv4 flex flex-column justify-center"
+								style={{background: `url(${item.image}) no-repeat center center`,backgroundSize: 'cover'}} >
 								<div className='tint'>
 									<div className="gridElement"></div>
 									<div className="gridElement"></div>
@@ -36,7 +37,7 @@ const CommercialProject = ({setProject, ProjectList}) => {
 									<div className="gridElement"></div>
 									<div className="gridElement"></div>
 								</div>
-								   <div className="description-container ">
+								   <div className="description-div ">
 			               <h1 data-aos="fade-left" style={{textAlign:'left'}} data-aos-duration="1000">{item.Client}</h1>
 										 <div className="list">
 										 	<p className="pa0" data-aos="fade-left" data-aos-duration="1000" data-aos-offset="145">Area: {item.Area}</p>
