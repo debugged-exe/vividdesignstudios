@@ -2,7 +2,6 @@
  height:85vh;
  width:70vw;
  position: relative;
- background-size:cover;
 }
 .header{
   font-family: 'Open Sans Condensed', sans-serif;
@@ -20,16 +19,19 @@
   height:auto;
 }
 
-.list
-{
+.list{
   list-style: none;
   text-align: left;
+}
+.list-div
+{
+  font-size:20px;
 }
 .tint{
   height: 100%;
   width: 100%;
   background: black;
-  opacity: 0.2;
+  opacity: 0.5;
   display: grid;
   grid-template-columns: 40px 50px auto 50px 40px;
   grid-template-rows: 17% 60% auto;
@@ -143,6 +145,10 @@
            .residential-div{
             height:70vh;
             width:94vw;
+           }
+           .list-div
+           {
+             font-size:20px;
            }
            .description-div{
              position: absolute;

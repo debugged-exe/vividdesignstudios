@@ -40,9 +40,9 @@ const CommercialProject = ({setProject, ProjectList}) => {
 								   <div className="description-div ">
 			               <h1 data-aos="fade-left" style={{textAlign:'left'}} data-aos-duration="1000">{item.Client}</h1>
 										 <div className="list">
-										 	<p className="pa0" data-aos="fade-left" data-aos-duration="1000" data-aos-offset="145">Area: {item.Area}</p>
-											<p className="pa0" data-aos="fade-left" data-aos-duration="1000" data-aos-offset="145">Type: {item.Type}</p>
-											<p className="pa0" data-aos="fade-left" data-aos-duration="1000" data-aos-offset="145">Location: {item.Location}</p>
+										 	<p className="pa0 list-div" data-aos="fade-left" data-aos-duration="1000" data-aos-offset="145">Area: {item.Area}</p>
+											<p className="pa0 list-div" data-aos="fade-left" data-aos-duration="1000" data-aos-offset="145">Type: {item.Type}</p>
+											<p className="pa0 list-div" data-aos="fade-left" data-aos-duration="1000" data-aos-offset="145">Location: {item.Location}</p>
 										 </div>
 										 <div className="category-button">
 				               <Link to='/projectview/#projectDisplay' onClick={() => setProject(item)}><button className="butt" data-aos="fade-left" data-aos-duration="1000" data-aos-offset="150">
