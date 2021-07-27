@@ -1,12 +1,4 @@
-import React, {useState,useEffect} from 'react';
-import Sidebar from './Components/Sidebar/Sidebar.js';
-import CommercialProject from './Components/Categories/CommercialProject/CommercialProject.js';
-import ResidentialProject from './Components/Categories/ResidentialProject/ResidentialProject.js';
-import Footer from './Components/Footer/Footer.js';
-import ProjectDisplay from './Components/ProjectDisplay/ProjectDisplay.js';
-import HomePage from './Pages/HomePage/HomePage.js';
-// import CategoryPage from './Pages/CategoryPage/CategoryPage.js';
-import LatestPage from './Pages/LatestPage/LatestPage.js';
+import React, {useState,useEffect,Suspense,lazy} from 'react';
 import HashLoader from "react-spinners/HashLoader";
 import './App.scss';
 import {
@@ -17,6 +9,13 @@ import {
     Redirect
   } from "react-router-dom";
 
+const Sidebar= lazy(()=>import ('./Components/Sidebar/Sidebar.js'));
+const CommercialProject = lazy(()=>import ('./Components/Categories/CommercialProject/CommercialProject.js'));
+const ResidentialProject= lazy(()=>import ('./Components/Categories/ResidentialProject/ResidentialProject.js'));
+const Footer= lazy(()=>import ('./Components/Footer/Footer.js'));
+const ProjectDisplay= lazy(()=>import ('./Components/ProjectDisplay/ProjectDisplay.js'));
+const HomePage= lazy(()=>import ('./Pages/HomePage/HomePage.js'));
+const LatestPage= lazy(()=>import ('./Pages/LatestPage/LatestPage.js'));
 
 class App extends React.Component {
 	constructor(){
@@ -51,9 +50,6 @@ class App extends React.Component {
     .then(resp=>{
       if(resp[0].Client){
         this.setProjectList(resp);
-        setTimeout(()=>{
-            this.setState({loading:false});
-          },3000)
       }
     })
     .catch(err => {
@@ -65,18 +61,17 @@ class App extends React.Component {
     const {ProjectList,loading} = this.state;
     return (
       <div className="App" style={{backgroundColor:'white'}}>
-      {
-        loading ?
-        <>
-         <div className="loader">
-          <HashLoader color={"gray"} loading={loading} size={150}>abc</HashLoader>
-         </div>
-         </> :
          <HashRouter>
-          <Sidebar />
+          <Suspense fallback={<div>Loading.....</div>}>
+            <Sidebar />
+          </Suspense>
+          
              <Switch>
                  <Route exact path = '/'>
-                 <HomePage ProjectList={ProjectList} showCategories={this.showCategories} showTrending={this.showTrending} />
+                 <Suspense fallback={<div>Loading home...</div>}>
+                      <HomePage ProjectList={ProjectList} showCategories={this.showCategories} showTrending={this.showTrending} />
+                 </Suspense>
+                   
                  </Route>
 
                  <Route
@@ -100,7 +95,6 @@ class App extends React.Component {
                </small>
              </footer>
          </HashRouter>
-      }
   </div>
     );
 	}
